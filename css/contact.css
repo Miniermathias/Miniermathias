@@ -1,0 +1,65 @@
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:start}
+
+/* Info panel */
+.contact-info{background:var(--grad-navy);border-radius:var(--r-xl);padding:2.5rem;color:#fff;position:sticky;top:110px}
+.contact-info .overline{margin-bottom:.5rem}
+.contact-info h2{color:#fff;margin-bottom:.75rem}
+.contact-info>p{color:rgba(255,255,255,.65);font-size:.95rem;line-height:1.7;margin-bottom:2rem}
+.contact-items{display:flex;flex-direction:column;gap:1.1rem;margin-bottom:2rem}
+.contact-item{display:flex;align-items:flex-start;gap:.9rem}
+.contact-icon{width:42px;height:42px;background:rgba(245,146,30,.14);border:1px solid rgba(245,146,30,.22);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon svg{width:19px;height:19px;fill:var(--orange)}
+.contact-label{display:block;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.2rem}
+.contact-value{font-weight:600;color:#fff;font-size:.93rem}
+.contact-value a{color:#fff;transition:color var(--t-fast)}
+.contact-value a:hover{color:var(--orange)}
+
+.emergency-box{background:rgba(245,146,30,.1);border:1px solid rgba(245,146,30,.25);border-radius:var(--r-md);padding:1rem 1.2rem;display:flex;align-items:flex-start;gap:.75rem}
+.emergency-box svg{width:20px;height:20px;fill:var(--orange);flex-shrink:0;margin-top:2px}
+.emergency-box strong{display:block;font-size:.85rem;font-weight:700;color:var(--orange);margin-bottom:.2rem}
+.emergency-box span{font-size:.82rem;color:rgba(255,255,255,.6)}
+.emergency-box a{color:var(--orange);font-weight:700}
+
+/* Form wrap */
+.contact-form-wrap{background:#fff;border-radius:var(--r-xl);padding:2.5rem;box-shadow:var(--shadow-md)}
+.form-title{font-family:var(--font-display);font-size:1.35rem;font-weight:800;color:var(--navy);margin-bottom:.35rem}
+.form-subtitle{font-size:.88rem;color:var(--text-mid);margin-bottom:1.75rem}
+
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.1rem}
+.form-group{position:relative}
+.form-group.full{grid-column:1/-1}
+
+/* Floating label */
+.form-group label{position:absolute;top:1rem;left:1rem;font-size:.88rem;color:var(--text-light);pointer-events:none;transition:top var(--t-fast),font-size var(--t-fast),color var(--t-fast);background:#fff;padding:0 .25rem}
+.form-group.focused label,.form-group.has-value label{top:-.5rem;font-size:.7rem;color:var(--orange);font-weight:700;letter-spacing:.04em}
+.form-group.error label{color:#ef4444}
+
+.form-input,.form-select,.form-textarea{width:100%;padding:1rem;border:1.5px solid var(--grey);border-radius:var(--r-md);font-size:.93rem;color:var(--text);transition:border-color var(--t-fast),box-shadow var(--t-fast);background:#fff;appearance:none;-webkit-appearance:none}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--orange);box-shadow:0 0 0 4px rgba(245,146,30,.12)}
+.form-group.error .form-input,.form-group.error .form-select,.form-group.error .form-textarea{border-color:#ef4444;box-shadow:0 0 0 3px rgba(239,68,68,.1)}
+.form-group.shake .form-input,.form-group.shake .form-textarea{animation:shake .4s ease}
+.form-error-msg{display:none;font-size:.73rem;color:#ef4444;margin-top:.3rem;font-weight:600}
+.form-group.error .form-error-msg{display:block}
+
+.select-wrap::after{content:'';position:absolute;right:1rem;top:50%;transform:translateY(-50%);width:10px;height:6px;background:var(--orange);clip-path:polygon(0 0,100% 0,50% 100%);pointer-events:none}
+.form-textarea{resize:vertical;min-height:120px}
+.char-counter{text-align:right;font-size:.7rem;color:var(--text-light);margin-top:.3rem}
+.char-counter.warn{color:#f59e0b}
+.char-counter.max{color:#ef4444}
+
+.form-submit{width:100%;padding:1.05rem;background:var(--grad-orange);color:#fff;border-radius:var(--r-md);font-family:var(--font-display);font-weight:800;font-size:.98rem;display:flex;align-items:center;justify-content:center;gap:.6rem;box-shadow:var(--shadow-orange);transition:transform var(--t-mid),box-shadow var(--t-mid);margin-top:.25rem}
+.form-submit:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 16px 40px rgba(245,146,30,.45)}
+.form-submit:disabled{opacity:.7;cursor:not-allowed}
+.submit-text{display:flex;align-items:center;gap:.5rem}
+.submit-text svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.submit-spinner{display:none;width:20px;height:20px;border:2.5px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+.form-submit.loading .submit-text{display:none}
+.form-submit.loading .submit-spinner{display:block}
+
+.form-success{text-align:center;padding:3rem 2rem}
+.success-icon{width:72px;height:72px;margin:0 auto 1.5rem;animation:scaleIn .5s var(--t-spring) forwards}
+@keyframes scaleIn{from{transform:scale(0)}to{transform:scale(1)}}
+.form-success h3{color:var(--navy);margin-bottom:.5rem}
+.form-success p{color:var(--text-mid)}
+
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}.contact-info{position:static}.form-grid{grid-template-columns:1fr}.contact-form-wrap,.contact-info{padding:2rem}}
