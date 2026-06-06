@@ -50,10 +50,10 @@ const NAV = `
   </a>
   <div class="nav-top">
     <div class="container nav-top-inner">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2L3 8v8c0 8.4 5.6 16.3 13 18 7.4-1.7 13-9.6 13-18V8L16 2z"/></svg></div>
+      <a href="index.html" class="nav-logo" aria-label="HYNERA Environnement — accueil">
+        <img src="assets/logo-hynera.svg" class="nav-logo-img" width="42" height="42" alt="" aria-hidden="true">
         <div class="nav-logo-text">
-          <span class="nav-logo-name">Hynera<span>-Environnement</span></span>
+          <span class="nav-logo-name">HYNERA<span> Environnement</span></span>
           <span class="nav-logo-sub">Lutte contre les nuisibles</span>
         </div>
       </a>
@@ -119,7 +119,7 @@ const FOOTER = `
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo">Hynera<span>-Environnement</span></div>
+        <div class="footer-logo">HYNERA<span> Environnement</span></div>
         <p>Depuis 2003, on protège les particuliers et les professionnels de Bretagne contre les nuisibles.</p>
         <div class="footer-social">
           <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
@@ -250,9 +250,17 @@ function serviceJsonLd(name, description) {
 function buildPage(cfg) {
   const jsonld = `  <script type="application/ld+json">\n${serviceJsonLd(cfg.serviceName, cfg.serviceDescription)}\n  </script>\n  <script type="application/ld+json">\n${faqJsonLd(cfg.faq)}\n  </script>`;
   const crumbCat = cfg.crumbCat || 'Services';
-  const contentHtml = cfg.sections.map(s => {
+  const photoPlaceholder = `<figure class="page-photo" aria-label="Photo de l'intervention ${cfg.crumb}">
+        <div class="page-photo-placeholder">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo à intégrer — ${cfg.crumb}</span>
+        </div>
+      </figure>`;
+
+  const contentHtml = cfg.sections.map((s, i) => {
     let html = `<h2>${s.h2}</h2>\n        ` + s.paragraphs.map(p => `<p>${p}</p>`).join('\n        ');
     if (s.list) html += `\n        <ul>\n          ` + s.list.map(li => `<li>${li}</li>`).join('\n          ') + `\n        </ul>`;
+    if (i === 0) html += `\n        ${photoPlaceholder}`;
     return html;
   }).join('\n        ');
 
@@ -266,11 +274,14 @@ function buildPage(cfg) {
 <main id="main" class="page-body">
   <nav class="breadcrumb" aria-label="Fil d'Ariane">
     <div class="container breadcrumb-inner">
-      <a href="index.html">Accueil</a>
-      <span class="breadcrumb-sep">›</span>
+      <a href="index.html" class="breadcrumb-home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Accueil
+      </a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
       <a href="index.html#services">${crumbCat}</a>
-      <span class="breadcrumb-sep">›</span>
-      <span class="breadcrumb-current">${cfg.crumb}</span>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span class="breadcrumb-current" aria-current="page">${cfg.crumb}</span>
     </div>
   </nav>
 

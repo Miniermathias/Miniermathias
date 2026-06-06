@@ -8,9 +8,8 @@
 
 /* Logo */
 .nav-logo{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
-.nav-logo-mark{width:42px;height:42px;background:var(--grad-orange);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-orange);transition:transform var(--t-spring)}
-.nav-logo:hover .nav-logo-mark{transform:rotate(-8deg) scale(1.06)}
-.nav-logo-mark svg{width:24px;height:24px;fill:#fff}
+.nav-logo-img{width:42px;height:42px;border-radius:var(--r-md);box-shadow:var(--shadow-orange);transition:transform var(--t-spring);flex-shrink:0}
+.nav-logo:hover .nav-logo-img{transform:rotate(-6deg) scale(1.06)}
 .nav-logo-text{display:flex;flex-direction:column;line-height:1.1}
 .nav-logo-name{font-family:var(--font-display);font-weight:900;font-size:1.1rem;color:#fff;letter-spacing:-.02em}
 .nav-logo-name span{color:var(--orange)}

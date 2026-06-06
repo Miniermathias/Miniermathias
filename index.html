@@ -69,13 +69,12 @@
 
 <!-- Page Loader -->
 <div id="page-loader">
-  <div class="loader-logo">HYNERA</div>
+  <div class="loader-logo">HYNERA<span>Environnement</span></div>
   <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
 </div>
 
 <!-- Custom Cursor -->
 <div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
 
 <!-- Skip to content -->
 <a href="#main" class="skip-link">Aller au contenu</a>
@@ -96,14 +95,10 @@
     <div class="container nav-top-inner">
 
       <!-- Logo -->
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-mark">
-          <svg viewBox="0 0 32 32" aria-hidden="true">
-            <path d="M16 2L3 8v8c0 8.4 5.6 16.3 13 18 7.4-1.7 13-9.6 13-18V8L16 2z"/>
-          </svg>
-        </div>
+      <a href="index.html" class="nav-logo" aria-label="HYNERA Environnement — accueil">
+        <img src="assets/logo-hynera.svg" class="nav-logo-img" width="42" height="42" alt="" aria-hidden="true">
         <div class="nav-logo-text">
-          <span class="nav-logo-name">Hynera<span>-Environnement</span></span>
+          <span class="nav-logo-name">HYNERA<span> Environnement</span></span>
           <span class="nav-logo-sub">Lutte contre les nuisibles</span>
         </div>
       </a>
@@ -331,7 +326,6 @@
 
         <!-- 1. Traitement du bois -->
         <article class="service-card reveal-up" data-delay="0">
-          <div class="service-glare"></div>
           <div class="service-icon-wrap">
             <svg class="service-svg" viewBox="0 0 48 48" aria-hidden="true">
               <rect x="8" y="28" width="32" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -352,7 +346,6 @@
 
         <!-- 2. Désinsectisation -->
         <article class="service-card reveal-up" data-delay="100">
-          <div class="service-glare"></div>
           <div class="service-icon-wrap">
             <svg class="service-svg" viewBox="0 0 48 48" aria-hidden="true">
               <ellipse cx="24" cy="26" rx="8" ry="11" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -372,7 +365,6 @@
 
         <!-- 3. Dératisation -->
         <article class="service-card reveal-up" data-delay="200">
-          <div class="service-glare"></div>
           <div class="service-icon-wrap">
             <svg class="service-svg" viewBox="0 0 48 48" aria-hidden="true">
               <path d="M12 32 C12 24 18 18 26 18 C32 18 36 22 36 28 C36 34 32 38 26 38 L14 40 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
@@ -393,7 +385,6 @@
 
         <!-- 4. Dépigeonnage -->
         <article class="service-card reveal-up" data-delay="300">
-          <div class="service-glare"></div>
           <div class="service-icon-wrap">
             <svg class="service-svg" viewBox="0 0 48 48" aria-hidden="true">
               <path d="M24 14 C20 18 16 22 16 27 C16 33 20 37 24 37 C28 37 32 33 32 27 C32 22 28 18 24 14Z" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -415,7 +406,6 @@
 
         <!-- 5. Désinfection -->
         <article class="service-card reveal-up" data-delay="400">
-          <div class="service-glare"></div>
           <div class="service-icon-wrap">
             <svg class="service-svg" viewBox="0 0 48 48" aria-hidden="true">
               <circle cx="24" cy="24" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -436,7 +426,6 @@
 
         <!-- 6. Façade et toiture -->
         <article class="service-card reveal-up" data-delay="500">
-          <div class="service-glare"></div>
           <div class="service-icon-wrap">
             <svg class="service-svg" viewBox="0 0 48 48" aria-hidden="true">
               <path d="M8 24 L24 10 L40 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
@@ -521,7 +510,39 @@
           <span class="overline reveal-fade">Notre histoire</span>
           <h2 class="reveal-up">20 ans de protection<br><span class="text-orange">au service de la Bretagne</span></h2>
           <p class="reveal-up" data-delay="100">HYNERA Environnement est née en 2003 à Bruz, en Ille-et-Vilaine. On réalise aujourd'hui plus de 10 000 interventions par an et on couvre tout le Grand Ouest, pour les particuliers comme pour les professionnels.</p>
-          <p class="reveal-up" data-delay="200">On utilise des produits respectueux de l'environnement et on garde le même cap depuis le début : régler le problème pour de bon. Notre certification phytopharmaceutique et notre label phytoresponsable encadrent chacune de nos interventions.</p>
+          <p class="reveal-up" data-delay="200">On utilise des produits respectueux de l'environnement et on garde le même cap depuis le début : régler le problème pour de bon. Nos certifications CTBA+ (traitement du bois), Certibiocide et notre agrément biocide encadrent chacune de nos interventions.</p>
+
+          <!-- Certification badges -->
+          <div class="certif-grid reveal-up" data-delay="220">
+            <div class="certif-badge">
+              <div class="certif-mark certif-mark--ctba" aria-hidden="true">
+                <svg viewBox="0 0 44 44" width="44" height="44">
+                  <rect width="44" height="44" rx="6" fill="#1B2D50"/>
+                  <text x="22" y="19" font-family="Montserrat,Arial,sans-serif" font-size="9" font-weight="900" fill="#F5921E" text-anchor="middle" letter-spacing="1">CTBA</text>
+                  <text x="22" y="30" font-family="Montserrat,Arial,sans-serif" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">+</text>
+                  <rect x="8" y="33" width="28" height="2" rx="1" fill="rgba(245,146,30,.4)"/>
+                </svg>
+              </div>
+              <div class="certif-info">
+                <strong>CTBA+</strong>
+                <span>Qualification traitement du bois</span>
+              </div>
+            </div>
+            <div class="certif-badge">
+              <div class="certif-mark certif-mark--certibio" aria-hidden="true">
+                <svg viewBox="0 0 44 44" width="44" height="44">
+                  <rect width="44" height="44" rx="6" fill="#166534"/>
+                  <path d="M22 8C22 8 30 13 30 20C30 27 26 31 22 33C18 31 14 27 14 20C14 13 22 8 22 8Z" fill="none" stroke="#fff" stroke-width="1.8"/>
+                  <path d="M22 13C22 13 27 17 27 21.5C27 26 24.5 28.5 22 30" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                  <text x="22" y="40" font-family="Arial,sans-serif" font-size="5.5" font-weight="700" fill="rgba(255,255,255,0.7)" text-anchor="middle" letter-spacing=".5">BIOCIDE</text>
+                </svg>
+              </div>
+              <div class="certif-info">
+                <strong>Certibiocide</strong>
+                <span>Agrément produits biocides professionnels</span>
+              </div>
+            </div>
+          </div>
 
           <!-- Founder -->
           <div class="founder reveal-up" data-delay="250">
@@ -747,19 +768,20 @@
 
       <div class="references-grid">
         <div class="reference-card reveal-up">
-          <div class="reference-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+          <div class="reference-body">
+            <span class="reference-year">2023</span>
+            <h3>Mairie de Rennes</h3>
+            <p>Dératisation et désinsectisation des bâtiments municipaux et des espaces verts.</p>
           </div>
+        </div>
+        <div class="reference-card reveal-up" data-delay="100">
           <div class="reference-body">
             <span class="reference-year">2022</span>
             <h3>Commune de Cesson-Sévigné</h3>
             <p>Prestations de lutte contre les nuisibles pour les bâtiments communaux.</p>
           </div>
         </div>
-        <div class="reference-card reveal-up" data-delay="150">
-          <div class="reference-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
-          </div>
+        <div class="reference-card reveal-up" data-delay="200">
           <div class="reference-body">
             <span class="reference-year">2021</span>
             <h3>Ville de Saint-Malo</h3>
@@ -977,7 +999,7 @@
     <div class="footer-grid">
       <!-- Brand -->
       <div class="footer-brand">
-        <div class="footer-logo">Hynera<span>-Environnement</span></div>
+        <div class="footer-logo">HYNERA<span> Environnement</span></div>
         <p>Depuis 2003, on protège les particuliers et les professionnels de Bretagne contre les nuisibles.</p>
         <div class="footer-social">
           <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook">

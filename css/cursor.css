@@ -1,9 +1,16 @@
+/* Simple orange dot cursor — fine-pointer devices only */
 @media(pointer:fine){
   *{cursor:none!important}
-  #cursor-dot{position:fixed;width:8px;height:8px;background:var(--orange);border-radius:50%;pointer-events:none;z-index:var(--z-cursor);transform:translate(-50%,-50%);transition:opacity .2s,width .2s,height .2s,background .2s}
-  #cursor-ring{position:fixed;width:36px;height:36px;border:2px solid rgba(245,146,30,.5);border-radius:50%;pointer-events:none;z-index:calc(var(--z-cursor) - 1);transform:translate(-50%,-50%);transition:opacity .2s,width .3s,height .3s,background .3s,border-color .3s}
-  #cursor-ring.hovered{width:52px;height:52px;background:rgba(245,146,30,.1);border-color:var(--orange)}
-  #cursor-dot.clicking{width:12px;height:12px;background:var(--orange-light)}
-  #cursor-ring.clicking{transform:translate(-50%,-50%) scale(.88)}
+  #cursor-dot{
+    position:fixed;
+    width:10px;height:10px;
+    background:var(--orange);
+    border-radius:50%;
+    pointer-events:none;
+    z-index:var(--z-cursor);
+    transform:translate(-50%,-50%);
+    transition:opacity .15s,width .15s,height .15s;
+  }
+  #cursor-dot.clicking{width:7px;height:7px;background:var(--orange-light)}
 }
-@media(pointer:coarse){#cursor-dot,#cursor-ring{display:none}}
+@media(pointer:coarse){#cursor-dot{display:none}}

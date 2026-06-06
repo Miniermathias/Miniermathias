@@ -36,7 +36,8 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:700}
 /* Page loader */
 #page-loader{position:fixed;inset:0;background:var(--navy-dark);z-index:var(--z-loader);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;transition:opacity .5s ease,visibility .5s ease}
 #page-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.loader-logo{font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--orange);letter-spacing:-.02em}
+.loader-logo{font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--orange);letter-spacing:-.02em;text-align:center;line-height:1.15}
+.loader-logo span{display:block;font-size:1rem;font-weight:600;color:rgba(255,255,255,.55);letter-spacing:.18em;text-transform:uppercase;margin-top:.2rem}
 .loader-bar-track{width:200px;height:3px;background:rgba(255,255,255,.1);border-radius:var(--r-full);overflow:hidden}
 .loader-bar-fill{height:100%;background:var(--grad-orange);border-radius:var(--r-full);animation:loadFill 1s ease forwards}
 @keyframes loadFill{from{width:0}to{width:100%}}
