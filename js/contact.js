@@ -92,8 +92,7 @@ export function initContactForm() {
       btn.disabled = false;
 
       if (res.ok) {
-        if (wrapper) wrapper.style.display = 'none';
-        if (success) success.hidden = false;
+        window.location.href = '/merci';
       } else {
         showFeedback('error', "Une erreur est survenue. Appelez-nous au 02 99 00 62 35.");
       }

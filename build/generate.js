@@ -23,7 +23,7 @@ function head(o) {
   <meta property="og:description" content="${o.description}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE}/${o.slug}">
-  <meta property="og:image" content="${SITE}/assets/og-hynera.jpg">
+  <meta property="og:image" content="${SITE}/assets/og-hynera.svg">
   <meta property="og:locale" content="fr_FR">
   <title>${o.title}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
