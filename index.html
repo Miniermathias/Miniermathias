@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="HYNERA Environnement — Expert en lutte contre les nuisibles depuis 2003. Désinsectisation, dératisation, traitement du bois, dépigeonnage à Rennes et en Bretagne. Intervention sous 24-48h.">
-  <title>HYNERA Environnement — Protection totale contre les nuisibles</title>
+  <meta name="description" content="HYNERA Environnement, expert en lutte contre les nuisibles depuis 2003. On intervient chez vous à Rennes et en Bretagne pour la désinsectisation, la dératisation, le traitement du bois et le dépigeonnage. Intervention sous 24 à 48h.">
+  <link rel="canonical" href="https://www.hynera.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HYNERA Environnement, lutte contre les nuisibles en Bretagne">
+  <meta property="og:description" content="Désinsectisation, dératisation, traitement du bois et dépigeonnage. On intervient chez vous sous 24 à 48h à Rennes et en Bretagne.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hynera.fr/">
+  <meta property="og:image" content="https://www.hynera.fr/assets/og-hynera.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <title>HYNERA Environnement, lutte contre les nuisibles à Rennes et en Bretagne</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +36,34 @@
   <link rel="stylesheet" href="css/testimonials.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/extra.css">
+
+  <!-- JSON-LD : LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.hynera.fr/#business",
+    "name": "HYNERA Environnement",
+    "url": "https://www.hynera.fr",
+    "telephone": "0299006235",
+    "image": "https://www.hynera.fr/assets/og-hynera.jpg",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3 Impasse Pierre-Gilles De Gennes",
+      "addressLocality": "Bruz",
+      "postalCode": "35170",
+      "addressCountry": "FR"
+    },
+    "openingHours": "Mo-Fr 08:30-18:30",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "22"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -47,12 +85,18 @@
      ============================================================ -->
 <nav id="navbar" aria-label="Navigation principale">
 
+  <!-- Emergency seasonal banner -->
+  <a href="tel:0299006235" class="emergency-banner" aria-label="Astreinte frelons et guêpes, appelez le 02 99 00 62 35">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    <span><strong>Astreinte frelons et guêpes</strong> les week-ends de juin à décembre. Appelez le 02 99 00 62 35.</span>
+  </a>
+
   <!-- Top bar -->
   <div class="nav-top">
     <div class="container nav-top-inner">
 
       <!-- Logo -->
-      <a href="#hero" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <div class="nav-logo-mark">
           <svg viewBox="0 0 32 32" aria-hidden="true">
             <path d="M16 2L3 8v8c0 8.4 5.6 16.3 13 18 7.4-1.7 13-9.6 13-18V8L16 2z"/>
@@ -66,12 +110,27 @@
 
       <!-- Desktop links -->
       <div class="nav-links" role="list">
-        <a href="#hero"         class="nav-link active" role="listitem">Accueil</a>
-        <a href="#services"     class="nav-link" role="listitem">Services</a>
-        <a href="#about"        class="nav-link" role="listitem">À Propos</a>
-        <a href="#agencies"     class="nav-link" role="listitem">Agences</a>
-        <a href="#testimonials" class="nav-link" role="listitem">Avis</a>
-        <a href="#contact"      class="nav-link" role="listitem">Contact</a>
+        <a href="#hero" class="nav-link active" role="listitem">Accueil</a>
+
+        <div class="nav-dropdown" role="listitem">
+          <a href="#services" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Services
+            <svg class="nav-caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="traitement-bois.html" role="menuitem">Traitement du bois</a>
+            <a href="desinsectisation.html" role="menuitem">Désinsectisation</a>
+            <a href="deratisation.html" role="menuitem">Dératisation</a>
+            <a href="depigeonnage.html" role="menuitem">Dépigeonnage</a>
+            <a href="desinfection.html" role="menuitem">Désinfection</a>
+            <a href="facade-toiture.html" role="menuitem">Façade et toiture</a>
+          </div>
+        </div>
+
+        <a href="#about"    class="nav-link" role="listitem">À propos</a>
+        <a href="#agencies" class="nav-link" role="listitem">Agences</a>
+        <a href="#reviews"  class="nav-link" role="listitem">Avis</a>
+        <a href="#contact"  class="nav-link" role="listitem">Contact</a>
       </div>
 
       <!-- CTA + hamburger -->
@@ -91,38 +150,38 @@
   <!-- Services sub-bar -->
   <div class="nav-services" role="navigation" aria-label="Services">
     <div class="container nav-services-inner">
-      <a href="#services" class="nav-service-link">
+      <a href="traitement-bois.html" class="nav-service-link">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1C4.69 1 2 3.69 2 7c0 2.3 1.24 4.3 3.09 5.41L4.5 15h7l-.59-2.59A6 6 0 0014 7c0-3.31-2.69-6-6-6z"/></svg>
         Traitement du bois
       </a>
-      <a href="#services" class="nav-service-link">
+      <a href="desinsectisation.html" class="nav-service-link">
         <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.22 3.22l1.42 1.42M11.36 11.36l1.42 1.42M3.22 12.78l1.42-1.42M11.36 4.64l1.42-1.42"/></svg>
         Désinsectisation
       </a>
-      <a href="#services" class="nav-service-link">
+      <a href="deratisation.html" class="nav-service-link">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2C4.34 2 3 3.34 3 5c0 1.3.78 2.4 1.9 2.84L3.5 14h9l-1.4-6.16A3 3 0 009 2H6z"/></svg>
         Dératisation
       </a>
-      <a href="#services" class="nav-service-link">
+      <a href="depigeonnage.html" class="nav-service-link">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2C5.8 4 4 6.2 4 8.5A4 4 0 008 12.5 4 4 0 0012 8.5C12 6.2 10.2 4 8 2z"/><path d="M5 6L2 4M11 6l3-2"/></svg>
         Dépigeonnage
       </a>
-      <a href="#services" class="nav-service-link">
+      <a href="desinfection.html" class="nav-service-link">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2a6 6 0 100 12A6 6 0 008 2zm0 2l3 3-3 3-3-3 3-3z"/></svg>
         Désinfection
       </a>
-      <a href="#services" class="nav-service-link">
+      <a href="facade-toiture.html" class="nav-service-link">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 10l6-6 6 6v5H2v-5z"/></svg>
-        Façade &amp; Toiture
+        Façade et toiture
       </a>
       <div class="nav-social">
-        <a href="#" aria-label="Facebook">
+        <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
-        <a href="#" aria-label="Instagram">
+        <a href="https://instagram.com/hyneraenvironnement" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a href="#" aria-label="TikTok">
+        <a href="https://www.tiktok.com/@hyneraenvironnement" target="_blank" rel="noopener" aria-label="TikTok">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 000 12.68 6.34 6.34 0 006.33-6.34V8.94a8.16 8.16 0 004.77 1.53V7.02a4.85 4.85 0 01-1-.33z"/></svg>
         </a>
       </div>
@@ -132,12 +191,18 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu navigation" aria-hidden="true">
-  <a href="#hero"         class="mobile-link">Accueil</a>
-  <a href="#services"     class="mobile-link">Services</a>
-  <a href="#about"        class="mobile-link">À Propos</a>
-  <a href="#agencies"     class="mobile-link">Agences</a>
-  <a href="#testimonials" class="mobile-link">Avis</a>
-  <a href="#contact"      class="mobile-link">Contact</a>
+  <a href="#hero"     class="mobile-link">Accueil</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="traitement-bois.html"   class="mobile-link mobile-sub">Traitement du bois</a>
+  <a href="desinsectisation.html"  class="mobile-link mobile-sub">Désinsectisation</a>
+  <a href="deratisation.html"      class="mobile-link mobile-sub">Dératisation</a>
+  <a href="depigeonnage.html"      class="mobile-link mobile-sub">Dépigeonnage</a>
+  <a href="desinfection.html"      class="mobile-link mobile-sub">Désinfection</a>
+  <a href="facade-toiture.html"    class="mobile-link mobile-sub">Façade et toiture</a>
+  <a href="#about"    class="mobile-link">À propos</a>
+  <a href="#agencies" class="mobile-link">Agences</a>
+  <a href="#reviews"  class="mobile-link">Avis</a>
+  <a href="#contact"  class="mobile-link">Contact</a>
   <a href="tel:0299006235" class="mobile-link mobile-phone">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127 1 .36 1.99.7 2.93a2 2 0 01-.45 2.11L6.91 8.09A16 16 0 0015.91 17l.27-.27a2 2 0 012.11-.45c.94.34 1.93.57 2.93.7A2 2 0 0122 19z"/></svg>
     02 99 00 62 35
@@ -171,7 +236,7 @@
 
         <p class="hero-sub reveal-fade" style="--d:0.7s">
           Désinsectisation, dératisation, traitement du bois et dépigeonnage.<br>
-          Intervention <strong>sous 24 à 48h</strong> en Bretagne et Grand Ouest.
+          On intervient chez vous <strong>sous 24 à 48h</strong> en Bretagne et dans le Grand Ouest.
         </p>
 
         <div class="hero-actions reveal-fade" style="--d:0.9s">
@@ -190,7 +255,7 @@
           <div class="hero-trust-sep"></div>
           <div class="hero-trust-item">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Intervention 24-48h
+            Intervention 24 à 48h
           </div>
           <div class="hero-trust-sep"></div>
           <div class="hero-trust-item">
@@ -248,10 +313,19 @@
   <section id="services" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="overline reveal-fade">Nos Prestations</span>
-        <h2 class="reveal-up">Solutions complètes contre les nuisibles</h2>
-        <p class="reveal-up" data-delay="100">Des interventions professionnelles adaptées à chaque situation, avec garantie résultat sur toutes nos prestations.</p>
+        <span class="overline reveal-fade">Nos prestations</span>
+        <h2 class="reveal-up">Nos solutions contre les nuisibles</h2>
+        <p class="reveal-up" data-delay="100">On intervient chez vous pour chaque type de nuisible, avec une garantie de résultat sur toutes nos prestations.</p>
       </div>
+
+      <!-- Emergency banner inside services -->
+      <a href="tel:0299006235" class="services-alert reveal-up" aria-label="Astreinte frelons et guêpes, appelez le 02 99 00 62 35">
+        <span class="services-alert-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </span>
+        <span class="services-alert-text"><strong>Astreinte frelons et guêpes</strong> les week-ends de juin à décembre. Appelez le 02 99 00 62 35.</span>
+        <span class="services-alert-cta">Appeler</span>
+      </a>
 
       <div class="services-grid">
 
@@ -268,11 +342,11 @@
           </div>
           <div class="service-body">
             <h3>Traitement du bois</h3>
-            <p>Élimination des insectes xylophages : termites, capricornes, lyctus. Protection longue durée de vos charpentes et structures bois.</p>
+            <p>On élimine les insectes xylophages : termites, capricornes, lyctus, et on protège durablement vos charpentes et structures bois.</p>
           </div>
           <div class="service-footer">
             <span class="service-badge">✓ Garantie incluse</span>
-            <a href="#contact" class="service-link">Devis <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="traitement-bois.html" class="service-link">En savoir plus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
         </article>
 
@@ -288,11 +362,11 @@
           </div>
           <div class="service-body">
             <h3>Désinsectisation</h3>
-            <p>Blattes, cafards, punaises de lit, fourmis, moustiques, processionnaires — extermination totale sous 48h maximum.</p>
+            <p>Blattes, cafards, punaises de lit, fourmis, moustiques, chenilles processionnaires : on traite tout type d'insecte sous 48h.</p>
           </div>
           <div class="service-footer">
             <span class="service-badge">✓ Intervention 48h</span>
-            <a href="#contact" class="service-link">Devis <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="desinsectisation.html" class="service-link">En savoir plus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
         </article>
 
@@ -309,11 +383,11 @@
           </div>
           <div class="service-body">
             <h3>Dératisation</h3>
-            <p>Rats, souris, campagnols, ragondins — élimination définitive avec pose de pièges et suivi personnalisé de votre site.</p>
+            <p>Rats, souris, campagnols, ragondins : on pose les pièges, on traite et on assure le suivi de votre site jusqu'à élimination complète.</p>
           </div>
           <div class="service-footer">
             <span class="service-badge">✓ Suivi inclus</span>
-            <a href="#contact" class="service-link">Devis <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="deratisation.html" class="service-link">En savoir plus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
         </article>
 
@@ -331,11 +405,11 @@
           </div>
           <div class="service-body">
             <h3>Dépigeonnage</h3>
-            <p>Pose de filets, pics anti-pigeons, répulsifs et nettoyage complet. Protection durable de vos façades et toitures.</p>
+            <p>Filets, pics anti-pigeons, répulsifs et nettoyage complet : on protège vos façades et toitures sur la durée.</p>
           </div>
           <div class="service-footer">
             <span class="service-badge">✓ Solution durable</span>
-            <a href="#contact" class="service-link">Devis <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="depigeonnage.html" class="service-link">En savoir plus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
         </article>
 
@@ -352,15 +426,15 @@
           </div>
           <div class="service-body">
             <h3>Désinfection</h3>
-            <p>Thermonébulisation, nébulisation et pulvérisation pour éradiquer virus, microbes et bactéries de vos locaux et habitations.</p>
+            <p>Thermonébulisation, nébulisation et pulvérisation : on assainit vos locaux et habitations contre les virus, microbes et bactéries.</p>
           </div>
           <div class="service-footer">
             <span class="service-badge">✓ Certifié</span>
-            <a href="#contact" class="service-link">Devis <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="desinfection.html" class="service-link">En savoir plus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
         </article>
 
-        <!-- 6. Façade & Toiture -->
+        <!-- 6. Façade et toiture -->
         <article class="service-card reveal-up" data-delay="500">
           <div class="service-glare"></div>
           <div class="service-icon-wrap">
@@ -372,12 +446,12 @@
             </svg>
           </div>
           <div class="service-body">
-            <h3>Façade &amp; Toiture</h3>
-            <p>Démoussage, traitement hydrofuge, nettoyage complet de toitures et façades. Devis personnalisé sur mesure.</p>
+            <h3>Façade et toiture</h3>
+            <p>Démoussage, traitement hydrofuge et nettoyage complet : on redonne un coup de neuf à vos toitures et façades, devis sur mesure.</p>
           </div>
           <div class="service-footer">
             <span class="service-badge">✓ Devis gratuit</span>
-            <a href="#contact" class="service-link">Devis <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="facade-toiture.html" class="service-link">En savoir plus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
         </article>
 
@@ -415,7 +489,7 @@
         <div class="trust-item reveal-fade" data-delay="200">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <div>
-            <strong>Certifié &amp; Agréé</strong>
+            <strong>Certifié et agréé</strong>
             <span>Certification phytopharmaceutique</span>
           </div>
         </div>
@@ -444,12 +518,26 @@
 
         <!-- Text -->
         <div class="about-content">
-          <span class="overline reveal-fade">Notre Histoire</span>
+          <span class="overline reveal-fade">Notre histoire</span>
           <h2 class="reveal-up">20 ans de protection<br><span class="text-orange">au service de la Bretagne</span></h2>
-          <p class="reveal-up" data-delay="100">Fondée en 2003 à Bruz (Ille-et-Vilaine), HYNERA Environnement s'est imposée comme le référent régional de la lutte contre les nuisibles. Avec plus de 10 000 interventions annuelles, nous intervenons dans tout le Grand Ouest pour les particuliers et les professionnels.</p>
-          <p class="reveal-up" data-delay="200">Passionnés par l'environnement, nous utilisons des produits respectueux de l'écosystème tout en garantissant une efficacité maximale. Notre certification phytopharmaceutique et notre label phytoresponsable en sont la preuve concrète.</p>
+          <p class="reveal-up" data-delay="100">HYNERA Environnement est née en 2003 à Bruz, en Ille-et-Vilaine. On réalise aujourd'hui plus de 10 000 interventions par an et on couvre tout le Grand Ouest, pour les particuliers comme pour les professionnels.</p>
+          <p class="reveal-up" data-delay="200">On utilise des produits respectueux de l'environnement et on garde le même cap depuis le début : régler le problème pour de bon. Notre certification phytopharmaceutique et notre label phytoresponsable encadrent chacune de nos interventions.</p>
 
-          <div class="about-values reveal-up" data-delay="300">
+          <!-- Founder -->
+          <div class="founder reveal-up" data-delay="250">
+            <div class="founder-avatar">JM</div>
+            <div class="founder-text">
+              <h3>Jacky Minier, fondateur</h3>
+              <p>Jacky a lancé HYNERA en 2003 après des années sur le terrain. Il connaît chaque nuisible de la région et forme lui-même ses techniciens. Sa ligne de conduite est simple : on se déplace vite, on explique ce qu'on fait, et on ne part pas tant que le problème n'est pas réglé.</p>
+            </div>
+          </div>
+
+          <!-- Team photo placeholder -->
+          <div class="team-photo reveal-up" data-delay="300" role="img" aria-label="Photo de l'équipe HYNERA à intégrer">
+            <span>Photo équipe à intégrer</span>
+          </div>
+
+          <div class="about-values reveal-up" data-delay="350">
             <div class="about-value">
               <div class="about-value-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -464,7 +552,7 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zM12 6v6l4 2"/></svg>
               </div>
               <div>
-                <strong>Réactivité garantie</strong>
+                <strong>On vient vite</strong>
                 <span>Intervention sous 24 à 48h</span>
               </div>
             </div>
@@ -474,7 +562,7 @@
               </div>
               <div>
                 <strong>Éco-responsable</strong>
-                <span>Respect de l'environnement</span>
+                <span>Produits respectueux de l'environnement</span>
               </div>
             </div>
             <div class="about-value">
@@ -482,8 +570,8 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
               <div>
-                <strong>Résultats garantis</strong>
-                <span>Satisfaction sur chaque mission</span>
+                <strong>Garantie résultat</strong>
+                <span>On revient si besoin, sans frais</span>
               </div>
             </div>
           </div>
@@ -497,7 +585,7 @@
             <div class="timeline-year">2003</div>
             <div class="timeline-body">
               <h4>Fondation à Bruz</h4>
-              <p>Création d'HYNERA Environnement en Ille-et-Vilaine.</p>
+              <p>Jacky Minier crée HYNERA Environnement en Ille-et-Vilaine.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -505,7 +593,7 @@
             <div class="timeline-year">2010</div>
             <div class="timeline-body">
               <h4>Agence de Ploërmel</h4>
-              <p>Expansion vers le Morbihan, département 56.</p>
+              <p>On ouvre une agence dans le Morbihan, département 56.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -513,15 +601,15 @@
             <div class="timeline-year">2018</div>
             <div class="timeline-body">
               <h4>Agence de Taden</h4>
-              <p>Ouverture en Côtes-d'Armor, département 22.</p>
+              <p>On s'installe en Côtes-d'Armor, département 22.</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot active"></div>
             <div class="timeline-year active">2024</div>
             <div class="timeline-body">
-              <h4>10 000+ interventions / an</h4>
-              <p>Référent incontournable du Grand Ouest.</p>
+              <h4>10 000 interventions par an</h4>
+              <p>On couvre aujourd'hui tout le Grand Ouest.</p>
             </div>
           </div>
         </div>
@@ -534,9 +622,9 @@
   <section id="agencies" class="section section-grey">
     <div class="container">
       <div class="section-header">
-        <span class="overline reveal-fade">Nos Agences</span>
+        <span class="overline reveal-fade">Nos agences</span>
         <h2 class="reveal-up">Proches de vous en Bretagne</h2>
-        <p class="reveal-up" data-delay="100">3 agences pour couvrir l'ensemble du Grand Ouest et intervenir rapidement partout chez vous.</p>
+        <p class="reveal-up" data-delay="100">3 agences pour couvrir le Grand Ouest et venir vite, où que vous soyez.</p>
       </div>
 
       <div class="agencies-grid">
@@ -562,7 +650,7 @@
             </div>
             <div class="agency-info">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>Lun – Ven : 08h30 – 18h30</span>
+              <span>Lun au Ven : 8h30 à 18h30</span>
             </div>
             <ul class="agency-services">
               <li>Traitement du bois</li>
@@ -596,7 +684,7 @@
             </div>
             <div class="agency-info">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>Lun – Ven : 08h30 – 18h30</span>
+              <span>Lun au Ven : 8h30 à 18h30</span>
             </div>
             <ul class="agency-services">
               <li>Dépigeonnage</li>
@@ -630,10 +718,10 @@
             </div>
             <div class="agency-info">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>Lun – Ven : 08h30 – 18h30</span>
+              <span>Lun au Ven : 8h30 à 18h30</span>
             </div>
             <ul class="agency-services">
-              <li>Façade &amp; Toiture</li>
+              <li>Façade et toiture</li>
               <li>Désinsectisation</li>
               <li>Traitement du bois</li>
             </ul>
@@ -648,101 +736,94 @@
     </div>
   </section>
 
-  <!-- ==================== TESTIMONIALS ==================== -->
-  <section id="testimonials" class="section section-dark">
+  <!-- ==================== RÉFÉRENCES PROFESSIONNELLES ==================== -->
+  <section id="references" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="overline reveal-fade">Avis Clients</span>
-        <h2 class="reveal-up" style="color:#fff">Ils nous font confiance</h2>
-        <div class="review-platforms reveal-fade" data-delay="200">
-          <span class="platform-chip">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F5921E" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            Pages Jaunes · 5/5
-          </span>
-          <span class="platform-chip">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
+        <span class="overline reveal-fade">Références professionnelles</span>
+        <h2 class="reveal-up">Ils nous ont confié leurs marchés</h2>
+        <p class="reveal-up" data-delay="100">On travaille aussi pour les collectivités et les marchés publics de la région.</p>
+      </div>
+
+      <div class="references-grid">
+        <div class="reference-card reveal-up">
+          <div class="reference-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+          </div>
+          <div class="reference-body">
+            <span class="reference-year">2022</span>
+            <h3>Commune de Cesson-Sévigné</h3>
+            <p>Prestations de lutte contre les nuisibles pour les bâtiments communaux.</p>
+          </div>
+        </div>
+        <div class="reference-card reveal-up" data-delay="150">
+          <div class="reference-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+          </div>
+          <div class="reference-body">
+            <span class="reference-year">2021</span>
+            <h3>Ville de Saint-Malo</h3>
+            <p>Contrat de dératisation sur 4 ans pour le domaine public communal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== AVIS ==================== -->
+  <section id="reviews" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="overline reveal-fade">Avis clients</span>
+        <h2 class="reveal-up" style="color:#fff">Ce que disent nos clients</h2>
+        <p class="reveal-up" data-delay="100">Retrouvez tous nos avis vérifiés sur Google et PagesJaunes.</p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <!-- Google -->
+        <div class="review-platform reveal-scale">
+          <div class="review-platform-head">
+            <svg class="review-logo" viewBox="0 0 48 48" aria-hidden="true">
               <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
               <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
               <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
               <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.97 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
             </svg>
-            Google · 5/5
-          </span>
-        </div>
-      </div>
-
-      <div class="testimonials-carousel">
-        <div class="testimonials-track-outer">
-          <div class="testimonials-track" id="testimonials-track">
-
-            <div class="testimonial-card">
-              <div class="tcard-inner">
-                <div class="tcard-stars">★★★★★</div>
-                <p class="tcard-quote">"Intervention rapide et efficace pour un nid de frelons asiatiques en hauteur. Technicien professionnel et rassurant. Je recommande vivement HYNERA !"</p>
-                <div class="tcard-author">
-                  <div class="tcard-avatar">M</div>
-                  <div>
-                    <strong>M. Leblanc</strong>
-                    <span>Rennes (35) — Particulier</span>
-                  </div>
-                </div>
-              </div>
+            <div>
+              <strong>Avis Google</strong>
+              <span>Note vérifiée</span>
             </div>
-
-            <div class="testimonial-card">
-              <div class="tcard-inner">
-                <div class="tcard-stars">★★★★★</div>
-                <p class="tcard-quote">"Traitement du bois exemplaire pour notre charpente. L'équipe a été discrète, rapide et le devis correspondait parfaitement à la facture finale."</p>
-                <div class="tcard-author">
-                  <div class="tcard-avatar">D</div>
-                  <div>
-                    <strong>Mme Dupont</strong>
-                    <span>Ploërmel (56) — Particulier</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <div class="tcard-inner">
-                <div class="tcard-stars">★★★★★</div>
-                <p class="tcard-quote">"Plus aucune trace de rongeurs après deux semaines. Suivi sérieux, garantie honorée sans discussion. Une entreprise sérieuse et professionnelle."</p>
-                <div class="tcard-author">
-                  <div class="tcard-avatar">M</div>
-                  <div>
-                    <strong>SCI Martin</strong>
-                    <span>Dinan (22) — Professionnel</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <div class="tcard-inner">
-                <div class="tcard-stars">★★★★★</div>
-                <p class="tcard-quote">"Nid de frelons asiatiques détruit en moins de 30 minutes. Tarif raisonnable, intervention possible le week-end. Vraiment parfait, merci !"</p>
-                <div class="tcard-author">
-                  <div class="tcard-avatar">A</div>
-                  <div>
-                    <strong>Association Sportive</strong>
-                    <span>Bruz (35) — Professionnel</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
+          <div class="review-rating">
+            <span class="review-score">5/5</span>
+            <span class="review-stars" aria-hidden="true">★★★★★</span>
+          </div>
+          <a href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener" class="btn btn-primary review-cta">
+            Voir tous nos avis
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
 
-        <div class="testimonials-controls">
-          <button class="t-arrow t-prev" id="t-prev" aria-label="Avis précédent">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <div class="t-dots" id="t-dots"></div>
-          <button class="t-arrow t-next" id="t-next" aria-label="Avis suivant">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
+        <!-- PagesJaunes -->
+        <div class="review-platform reveal-scale" data-delay="200">
+          <div class="review-platform-head">
+            <svg class="review-logo" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#FFE600"/><text x="12" y="16" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="11" fill="#1B2D50">PJ</text></svg>
+            <div>
+              <strong>Avis PagesJaunes</strong>
+              <span>Note vérifiée</span>
+            </div>
+          </div>
+          <div class="review-rating">
+            <span class="review-score">5/5</span>
+            <span class="review-stars" aria-hidden="true">★★★★★</span>
+          </div>
+          <a href="https://www.pagesjaunes.fr/pros/08967811" target="_blank" rel="noopener" class="btn btn-primary review-cta">
+            Voir tous nos avis
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
+
       </div>
     </div>
   </section>
@@ -756,7 +837,7 @@
         <div class="contact-info reveal-left">
           <span class="overline">Contact</span>
           <h2>Demandez votre<br><span class="text-orange">devis gratuit</span></h2>
-          <p>Notre équipe vous répond sous <strong>24 à 48h</strong> pour planifier votre intervention.</p>
+          <p>On vous répond sous <strong>24 à 48h</strong> pour planifier votre intervention.</p>
 
           <div class="contact-items">
             <div class="contact-item">
@@ -783,7 +864,7 @@
               </div>
               <div>
                 <span class="contact-label">Horaires</span>
-                <span class="contact-value">Lun – Ven : 08h30 – 18h30</span>
+                <span class="contact-value">Lun au Ven : 8h30 à 18h30</span>
               </div>
             </div>
           </div>
@@ -791,8 +872,8 @@
           <div class="emergency-box">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
             <div>
-              <strong>Urgence frelons / guêpes</strong>
-              <span>Week-end en astreinte (juin – déc.) : <a href="tel:0299006235">02 99 00 62 35</a></span>
+              <strong>Urgence frelons et guêpes</strong>
+              <span>Week-end en astreinte de juin à décembre : <a href="tel:0299006235">02 99 00 62 35</a></span>
             </div>
           </div>
         </div>
@@ -801,8 +882,12 @@
         <div class="contact-form-wrap reveal-right">
           <div id="form-wrapper">
             <h3 class="form-title">Votre message</h3>
-            <p class="form-subtitle">Réponse garantie sous 24-48h.</p>
-            <form id="contact-form" novalidate>
+            <p class="form-subtitle">On vous répond sous 24 à 48h.</p>
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+              <input type="hidden" name="form-name" value="contact">
+              <p class="hp-field" hidden aria-hidden="true">
+                <label>Ne remplissez pas ce champ : <input name="bot-field"></label>
+              </p>
               <div class="form-grid">
                 <div class="form-group">
                   <input class="form-input" type="text" id="nom" name="nom" placeholder=" " required>
@@ -827,10 +912,28 @@
                     <option>Dératisation</option>
                     <option>Dépigeonnage</option>
                     <option>Désinfection</option>
-                    <option>Façade / Toiture</option>
+                    <option>Façade et toiture</option>
                     <option>Autre</option>
                   </select>
-                  <label for="service">Type d'intervention</label>
+                  <label for="service">Service concerné</label>
+                </div>
+                <div class="form-group select-wrap">
+                  <select class="form-select" id="profil" name="profil">
+                    <option value="">Choisissez votre profil</option>
+                    <option>Particulier</option>
+                    <option>Professionnel</option>
+                    <option>Collectivité</option>
+                  </select>
+                  <label for="profil">Type d'intervention</label>
+                </div>
+                <div class="form-group select-wrap">
+                  <select class="form-select" id="urgence" name="urgence">
+                    <option value="">Niveau d'urgence</option>
+                    <option>Intervention standard</option>
+                    <option>Urgent (sous 24h)</option>
+                    <option>Week-end</option>
+                  </select>
+                  <label for="urgence">Urgence</label>
                 </div>
                 <div class="form-group full">
                   <textarea class="form-textarea" id="message" name="message" rows="5" placeholder=" " maxlength="500"></textarea>
@@ -845,6 +948,7 @@
                 </span>
                 <span class="submit-spinner" hidden></span>
               </button>
+              <p class="form-feedback" id="form-feedback" role="alert" hidden></p>
             </form>
           </div>
           <div id="form-success" class="form-success" hidden>
@@ -855,7 +959,7 @@
               </svg>
             </div>
             <h3>Message envoyé !</h3>
-            <p>Nous vous répondrons sous 24 à 48h. À bientôt.</p>
+            <p>On vous répond sous 24 à 48h. À bientôt.</p>
           </div>
         </div>
 
@@ -874,15 +978,15 @@
       <!-- Brand -->
       <div class="footer-brand">
         <div class="footer-logo">Hynera<span>-Environnement</span></div>
-        <p>Depuis 2003, votre partenaire de confiance pour la lutte contre les nuisibles en Bretagne et Grand Ouest.</p>
+        <p>Depuis 2003, on protège les particuliers et les professionnels de Bretagne contre les nuisibles.</p>
         <div class="footer-social">
-          <a href="#" aria-label="Facebook">
+          <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
           </a>
-          <a href="#" aria-label="Instagram">
+          <a href="https://instagram.com/hyneraenvironnement" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a href="#" aria-label="TikTok">
+          <a href="https://www.tiktok.com/@hyneraenvironnement" target="_blank" rel="noopener" aria-label="TikTok">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77.5 2.89 2.89 0 012.89-3.39c.28 0 .54.04.79.1V9.01a6.34 6.34 0 105.56 6.29V8.94a8.16 8.16 0 004.77 1.53V7.02a4.85 4.85 0 01-1-.33z"/></svg>
           </a>
         </div>
@@ -891,21 +995,23 @@
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">Traitement du bois</a></li>
-          <li><a href="#services">Désinsectisation</a></li>
-          <li><a href="#services">Dératisation</a></li>
-          <li><a href="#services">Dépigeonnage</a></li>
-          <li><a href="#services">Désinfection</a></li>
-          <li><a href="#services">Façade &amp; Toiture</a></li>
+          <li><a href="traitement-bois.html">Traitement du bois</a></li>
+          <li><a href="desinsectisation.html">Désinsectisation</a></li>
+          <li><a href="deratisation.html">Dératisation</a></li>
+          <li><a href="depigeonnage.html">Dépigeonnage</a></li>
+          <li><a href="desinfection.html">Désinfection</a></li>
+          <li><a href="facade-toiture.html">Façade et toiture</a></li>
         </ul>
       </div>
-      <!-- Agences -->
+      <!-- Zones -->
       <div class="footer-col">
-        <h4>Agences</h4>
+        <h4>Nos zones</h4>
         <ul>
-          <li><a href="#agencies">Bruz — Ille-et-Vilaine (35)</a></li>
-          <li><a href="#agencies">Ploërmel — Morbihan (56)</a></li>
-          <li><a href="#agencies">Taden — Côtes-d'Armor (22)</a></li>
+          <li><a href="deratisation-rennes.html">Dératisation Rennes</a></li>
+          <li><a href="deratisation-saint-malo.html">Dératisation Saint-Malo</a></li>
+          <li><a href="desinsectisation-rennes.html">Désinsectisation Rennes</a></li>
+          <li><a href="nuisibles-vannes.html">Nuisibles Vannes</a></li>
+          <li><a href="traitement-bois-bretagne.html">Traitement bois Bretagne</a></li>
         </ul>
       </div>
       <!-- Infos -->
@@ -913,9 +1019,9 @@
         <h4>Informations</h4>
         <ul>
           <li><a href="#contact">Demander un devis</a></li>
-          <li><a href="#testimonials">Avis clients</a></li>
-          <li><a href="/mentions-legales">Mentions légales</a></li>
-          <li><a href="/mentions-legales">Politique RGPD</a></li>
+          <li><a href="#reviews">Avis clients</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="mentions-legales.html#rgpd">Politique RGPD</a></li>
         </ul>
         <div class="footer-cert">
           <span>✓ Certifié phytopharmaceutique</span>
@@ -925,7 +1031,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 HYNERA Environnement — SARL Unipersonnelle, 35170 Bruz</p>
+      <p>&copy; <span id="year">2025</span> HYNERA Environnement, SARL Unipersonnelle, 35170 Bruz</p>
       <a href="#hero" class="back-top" aria-label="Retour en haut">
         <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
       </a>
@@ -933,6 +1039,22 @@
   </div>
 </footer>
 
+<!-- Sticky mobile call -->
+<a href="tel:0299006235" class="sticky-call" aria-label="Appeler HYNERA au 02 99 00 62 35">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127 1 .36 1.99.7 2.93a2 2 0 01-.45 2.11L6.91 8.09A16 16 0 0015.91 17l.27-.27a2 2 0 012.11-.45c.94.34 1.93.57 2.93.7A2 2 0 0122 19z"/></svg>
+  Appeler le 02 99 00 62 35
+</a>
+
+<!-- Cookie consent -->
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Consentement cookies" hidden>
+  <p class="cookie-text">On utilise des cookies pour mesurer l'audience du site et améliorer votre navigation. Vous pouvez accepter ou refuser, votre choix est conservé.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" id="cookie-accept">Accepter</button>
+    <button class="cookie-btn cookie-refuse" id="cookie-refuse">Refuser</button>
+  </div>
+</div>
+
 <script type="module" src="js/main.js"></script>
+<script src="js/site.js" defer></script>
 </body>
 </html>

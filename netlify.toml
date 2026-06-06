@@ -1,0 +1,53 @@
+# Configuration Netlify pour HYNERA Environnement
+[build]
+  publish = "."
+
+# URLs propres : /traitement-bois sert traitement-bois.html
+[[redirects]]
+  from = "/traitement-bois"
+  to = "/traitement-bois.html"
+  status = 200
+[[redirects]]
+  from = "/desinsectisation"
+  to = "/desinsectisation.html"
+  status = 200
+[[redirects]]
+  from = "/deratisation"
+  to = "/deratisation.html"
+  status = 200
+[[redirects]]
+  from = "/depigeonnage"
+  to = "/depigeonnage.html"
+  status = 200
+[[redirects]]
+  from = "/desinfection"
+  to = "/desinfection.html"
+  status = 200
+[[redirects]]
+  from = "/facade-toiture"
+  to = "/facade-toiture.html"
+  status = 200
+[[redirects]]
+  from = "/deratisation-rennes"
+  to = "/deratisation-rennes.html"
+  status = 200
+[[redirects]]
+  from = "/deratisation-saint-malo"
+  to = "/deratisation-saint-malo.html"
+  status = 200
+[[redirects]]
+  from = "/nuisibles-vannes"
+  to = "/nuisibles-vannes.html"
+  status = 200
+[[redirects]]
+  from = "/desinsectisation-rennes"
+  to = "/desinsectisation-rennes.html"
+  status = 200
+[[redirects]]
+  from = "/traitement-bois-bretagne"
+  to = "/traitement-bois-bretagne.html"
+  status = 200
+[[redirects]]
+  from = "/mentions-legales"
+  to = "/mentions-legales.html"
+  status = 200
