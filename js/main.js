@@ -3,7 +3,6 @@ import { initNavbar }       from './navbar.js';
 import { initAnimations }   from './animations.js';
 import { initCounters }     from './counters.js';
 import { initServiceCards } from './services.js';
-import { initTestimonials } from './testimonials.js';
 import { initContactForm }  from './contact.js';
 import { initCursor }       from './cursor.js';
 
@@ -14,6 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimations();
   initCounters();
   initServiceCards();
-  initTestimonials();
   initContactForm();
 });

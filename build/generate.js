@@ -36,6 +36,7 @@ function head(o) {
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/extra.css">
+  <link rel="stylesheet" href="css/polish.css">
 ${o.jsonld || ''}
 </head>
 <body>
@@ -157,13 +158,13 @@ const FOOTER = `
           <li><a href="mentions-legales.html#rgpd">Politique RGPD</a></li>
         </ul>
         <div class="footer-cert">
-          <span>✓ Certifié phytopharmaceutique</span>
-          <span>✓ Label phytoresponsable</span>
+          <span>✓ Certifié CTBA+</span>
+          <span>✓ Agréé Certibiocide</span>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="year">2025</span> HYNERA Environnement, SARL Unipersonnelle, 35170 Bruz</p>
+      <p>&copy; <span id="year">2026</span> HYNERA Environnement, SARL Unipersonnelle, 35170 Bruz</p>
       <a href="#main" class="back-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg></a>
     </div>
   </div>
@@ -741,7 +742,7 @@ function engageSection() {
     list: [
       'Devis gratuit et sans engagement, après une visite sur place si nécessaire.',
       'Garantie de résultat : si le problème persiste, on revient sans frais.',
-      'Produits respectueux de l\'environnement et label phytoresponsable.',
+      'Produits respectueux de l\'environnement, certifications CTBA+ et Certibiocide.',
       'Des conseils concrets pour éviter que le problème ne revienne.',
     ],
   };

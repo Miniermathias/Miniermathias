@@ -1,0 +1,92 @@
+/* ============================================================
+   POLISH LAYER — UI/UX refinements (loaded last)
+   Accessibility, depth, micro-interactions, rhythm
+   ============================================================ */
+
+/* ---- Accessible focus rings (reset.css strips outlines) ---- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible{
+  outline:none;
+  box-shadow:var(--ring);
+  border-radius:var(--r-sm);
+}
+.btn:focus-visible,
+.nav-devis:focus-visible,
+.form-submit:focus-visible{border-radius:var(--r-full)}
+.form-input:focus-visible,
+.form-select:focus-visible,
+.form-textarea:focus-visible{box-shadow:0 0 0 4px rgba(245,146,30,.18);border-color:var(--orange)}
+
+/* ---- Text selection ---- */
+::selection{background:rgba(245,146,30,.28);color:var(--navy-dark)}
+
+/* ---- Anchor offset under fixed navbar ---- */
+section[id]{scroll-margin-top:170px}
+@media(max-width:900px){section[id]{scroll-margin-top:90px}}
+
+/* ---- Smoother reveal easing ---- */
+.reveal-up,.reveal-left,.reveal-right{transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+
+/* ---- Section header: decorative accent under titles ---- */
+.section-header h2{position:relative;display:inline-block;padding-bottom:.85rem}
+.section-header h2::after{
+  content:'';position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:54px;height:4px;border-radius:var(--r-full);
+  background:var(--grad-orange);
+}
+.section-dark .section-header h2::after{background:var(--grad-orange);opacity:.95}
+
+/* ---- Buttons: subtle shine sweep on hover ---- */
+.btn::after,.form-submit::after,.hero-card-cta::after{
+  content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);
+  transform:skewX(-18deg);transition:left .6s ease;pointer-events:none;
+}
+.btn:hover::after,.form-submit:hover::after,.hero-card-cta:hover::after{left:140%}
+.form-submit,.hero-card-cta{position:relative;overflow:hidden}
+
+/* ---- Cards: crisper, layered depth ---- */
+.service-card,.agency-card,.reference-card,.certif-badge{will-change:transform}
+.service-icon-wrap{transition:background var(--t-mid),transform var(--t-spring),box-shadow var(--t-mid)}
+.service-card:hover .service-icon-wrap{box-shadow:var(--shadow-orange)}
+
+/* ---- Service badge: pill with tint ---- */
+.service-badge{background:rgba(22,163,74,.1);padding:.28rem .7rem;border-radius:var(--r-full)}
+
+/* ---- Service link affordance ---- */
+.service-footer{padding-top:.85rem;border-top:1px solid var(--grey);margin-top:.25rem}
+
+/* ---- Nav link active dot refinement ---- */
+.nav-link.active{color:#fff}
+
+/* ---- Hero card: richer surface ---- */
+.hero-card{box-shadow:0 24px 70px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06)}
+.hero-stat{transition:background var(--t-fast),transform var(--t-spring),border-color var(--t-fast)}
+.hero-stat:hover{border-color:rgba(245,146,30,.35)}
+
+/* ---- Certif badge hover ---- */
+.certif-badge{transition:transform var(--t-spring),box-shadow var(--t-mid),border-color var(--t-mid)}
+.certif-badge:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(245,146,30,.35)}
+
+/* ---- Contact form card: lift ---- */
+.contact-form-wrap{box-shadow:var(--shadow-lg)}
+
+/* ---- Footer link dot alignment already handled; tighten bottom ---- */
+.footer-bottom p{letter-spacing:.01em}
+
+/* ---- Sticky call: safe-area + shadow ---- */
+.sticky-call{padding-bottom:calc(1rem + env(safe-area-inset-bottom,0))}
+
+/* ---- Reduced-motion: disable shine + float ---- */
+@media(prefers-reduced-motion:reduce){
+  .btn::after,.form-submit::after,.hero-card-cta::after{display:none}
+  .hero-card{animation:none}
+  .hero-bg{animation:none}
+}
+
+/* ---- Image rendering ---- */
+img{image-rendering:auto}
