@@ -98,8 +98,5 @@ section[id]{scroll-margin-top:170px}
 /* ---- Timeline body readability ---- */
 .timeline-body h4{font-size:1rem}
 
-/* ---- Process section spacing tie-in ---- */
-#process .section-header{margin-bottom:clamp(2rem,4vw,3rem)}
-
 /* ---- Generic image rendering ---- */
 img{image-rendering:auto}

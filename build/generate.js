@@ -354,7 +354,7 @@ const services = [
     h1: 'Traitement du bois à Rennes et en Bretagne',
     metaTitle: 'Traitement du bois à Rennes et en Bretagne | HYNERA',
     ogTitle: 'Traitement du bois à Rennes et en Bretagne',
-    metaDescription: 'Traitement du bois et des charpentes à Rennes et en Bretagne. On élimine termites, capricornes et vrillettes, et on protège vos structures. Devis gratuit.',
+    metaDescription: 'Traitement du bois et des charpentes à Rennes et en Bretagne. On traite termites, capricornes et vrillettes, et on protège vos structures. Devis gratuit.',
     serviceName: 'Traitement du bois',
     serviceDescription: 'Traitement curatif et préventif des bois et charpentes contre les insectes xylophages et les champignons.',
     intro: 'Les insectes du bois fragilisent vos charpentes en silence. On repère les attaques, on traite le bois en profondeur et on le protège pour les années à venir.',
@@ -393,7 +393,7 @@ const services = [
     ogTitle: 'Désinsectisation à Rennes et en Bretagne',
     metaDescription: 'Désinsectisation à Rennes et en Bretagne : cafards, punaises de lit, fourmis, guêpes et frelons. On intervient chez vous sous 48h. Devis gratuit.',
     serviceName: 'Désinsectisation',
-    serviceDescription: 'Élimination des insectes nuisibles dans les habitations et les locaux professionnels.',
+    serviceDescription: 'Traitement des insectes nuisibles dans les habitations et les locaux professionnels.',
     intro: 'Cafards dans la cuisine, punaises dans la chambre, fourmis qui reviennent sans arrêt : on traite tout type d\'insecte et on intervient chez vous sous 48h.',
     sections: [
       { h2: 'Une réponse pour chaque insecte', paragraphs: [
@@ -430,8 +430,8 @@ const services = [
     ogTitle: 'Dératisation à Rennes et en Bretagne',
     metaDescription: 'Dératisation à Rennes et en Bretagne : rats, souris, campagnols. On pose les pièges, on traite et on assure le suivi. Devis gratuit, garantie résultat.',
     serviceName: 'Dératisation',
-    serviceDescription: 'Élimination des rongeurs dans les habitations, locaux professionnels et espaces extérieurs.',
-    intro: 'Un rongeur dans la maison ou l\'entreprise, c\'est un risque pour la santé et pour vos installations. On pose les pièges, on traite et on suit le site jusqu\'à élimination complète.',
+    serviceDescription: 'Traitement des rongeurs dans les habitations, locaux professionnels et espaces extérieurs.',
+    intro: 'Un rongeur dans la maison ou l\'entreprise, c\'est un risque pour la santé et pour vos installations. On pose les pièges, on traite et on suit le site jusqu\'au traitement complet.',
     sections: [
       { h2: 'Pourquoi agir vite contre les rongeurs', paragraphs: [
         'Les rats et les souris rongent les câbles, contaminent les denrées et se reproduisent très vite. Quelques individus deviennent une colonie en quelques semaines.',
@@ -447,12 +447,12 @@ const services = [
         'On commence par repérer les zones de passage, les nids et les points d\'entrée. On installe ensuite des postes d\'appâtage sécurisés, hors de portée des enfants et des animaux domestiques.',
         'On revient contrôler les postes, on ajuste si besoin et on vérifie que l\'activité a bien cessé. Pour les professionnels, on tient un plan de lutte et un registre conforme aux contrôles d\'hygiène.' ] },
       { h2: 'Prévention et garantie', paragraphs: [
-        'Éliminer les rongeurs ne suffit pas si rien ne change. On vous conseille sur les accès à condamner et les sources de nourriture à supprimer.',
+        'Traiter les rongeurs ne suffit pas si rien ne change. On vous conseille sur les accès à condamner et les sources de nourriture à supprimer.',
         'Nos interventions sont garanties. Si l\'activité reprend, on revient pour régler le problème.' ] },
     ],
     faq: [
       { q: 'Les appâts sont-ils dangereux pour mon chien ?', a: 'On utilise des postes d\'appâtage sécurisés et fermés à clé, conçus pour rester hors de portée des animaux domestiques et des enfants.' },
-      { q: 'Combien de temps pour se débarrasser des rats ?', a: 'On constate en général une nette baisse d\'activité en une à deux semaines. Le suivi confirme l\'élimination complète.' },
+      { q: 'Combien de temps pour se débarrasser des rats ?', a: 'On constate en général une nette baisse d\'activité en une à deux semaines. Le suivi confirme que l\'activité a bien cessé.' },
       { q: 'Comment les rongeurs entrent-ils chez moi ?', a: 'Par les canalisations, les fissures, les bouches d\'aération ou sous les portes. On repère les accès et on vous indique comment les boucher.' },
       { q: 'Proposez-vous des contrats pour les professionnels ?', a: 'Oui, avec un plan de lutte, des passages réguliers et un registre conforme aux normes d\'hygiène HACCP.' },
     ],
@@ -480,7 +480,7 @@ const services = [
           'Systèmes de câbles tendus sur les zones sensibles.',
           'Répulsifs adaptés aux toitures et aux charpentes métalliques.' ] },
       { h2: 'Nettoyage et désinfection', paragraphs: [
-        'Avant de poser un dispositif, on retire les nids et on nettoie les fientes. On désinfecte ensuite les surfaces pour éliminer les germes et les parasites laissés par les oiseaux.',
+        'Avant de poser un dispositif, on retire les nids et on nettoie les fientes. On désinfecte ensuite les surfaces pour neutraliser les germes et les parasites laissés par les oiseaux.',
         'Cette étape est importante : elle assainit les lieux et garantit que les protections tiennent dans le temps.' ] },
       { h2: 'Une protection qui dure', paragraphs: [
         'Nos dispositifs sont pensés pour résister aux intempéries bretonnes et rester efficaces des années. On privilégie des solutions qui respectent les oiseaux : on les éloigne sans les blesser.',
@@ -507,7 +507,7 @@ const services = [
     sections: [
       { h2: 'Quand faire appel à une désinfection', paragraphs: [
         'Certaines situations demandent plus qu\'un nettoyage classique : un logement insalubre, un local après le passage de nuisibles, une cuisine professionnelle ou un cabinet médical.',
-        'On intervient chez vous ou dans vos locaux pour éliminer les germes invisibles qui posent un risque pour la santé.' ] },
+        'On intervient chez vous ou dans vos locaux pour neutraliser les germes invisibles qui posent un risque pour la santé.' ] },
       { h2: 'Nos techniques de désinfection', paragraphs: [
         'On adapte la méthode à la surface et au type de local :' ],
         list: [
@@ -523,7 +523,7 @@ const services = [
         'Après chaque intervention, on vous remet un compte rendu de ce qui a été traité. Pour les professionnels soumis à des contrôles, ce document fait partie de votre dossier d\'hygiène et prouve le sérieux de votre démarche.' ] },
     ],
     faq: [
-      { q: 'Quelle est la différence avec un nettoyage classique ?', a: 'Le nettoyage enlève la saleté visible. La désinfection élimine les germes, virus et bactéries, y compris dans les zones difficiles d\'accès.' },
+      { q: 'Quelle est la différence avec un nettoyage classique ?', a: 'Le nettoyage enlève la saleté visible. La désinfection neutralise les germes, virus et bactéries, y compris dans les zones difficiles d\'accès.' },
       { q: 'Combien de temps avant de réoccuper les lieux ?', a: 'Cela dépend de la technique et du produit. On vous indique précisément le temps d\'aération à respecter, en général de quelques heures.' },
       { q: 'Les produits sont-ils dangereux ?', a: 'On utilise des produits homologués et appliqués par des techniciens formés. En respectant le temps d\'aération, il n\'y a pas de risque.' },
       { q: 'Intervenez-vous en urgence ?', a: 'Oui, pour les situations sensibles on s\'organise rapidement. Appelez-nous pour planifier une intervention au plus vite.' },
@@ -579,16 +579,16 @@ const locals = [
     h1: 'Dératisation à Rennes (35)',
     metaTitle: 'Dératisation à Rennes (35) | HYNERA Environnement',
     ogTitle: 'Dératisation à Rennes',
-    metaDescription: 'Dératisation à Rennes et dans toute l\'agglomération. On élimine rats et souris, on pose les pièges et on assure le suivi. Intervention rapide, devis gratuit.',
+    metaDescription: 'Dératisation à Rennes et dans toute l\'agglomération. On traite rats et souris, on pose les pièges et on assure le suivi. Intervention rapide, devis gratuit.',
     serviceName: 'Dératisation à Rennes',
-    serviceDescription: 'Élimination des rongeurs à Rennes et dans l\'agglomération rennaise.',
-    intro: 'Notre siège est à Bruz, aux portes de Rennes. On intervient vite dans toute la métropole pour éliminer rats et souris, chez les particuliers comme dans les entreprises.',
+    serviceDescription: 'Traitement des rongeurs à Rennes et dans l\'agglomération rennaise.',
+    intro: 'Notre siège est à Bruz, aux portes de Rennes. On intervient vite dans toute la métropole pour traiter rats et souris, chez les particuliers comme dans les entreprises.',
     sections: [
       { h2: 'Une intervention rapide sur Rennes', paragraphs: [
         'Basés à Bruz, on connaît bien Rennes et son agglomération. Centre-ville, quartiers résidentiels, zones d\'activité : on se déplace rapidement où que vous soyez.',
         'Les immeubles anciens du centre et les réseaux d\'assainissement favorisent la présence de rongeurs. On adapte notre méthode au type de bâtiment.' ] },
       { h2: 'Rats et souris : on traite à la source', paragraphs: [
-        'On repère les points d\'entrée, on installe des postes d\'appâtage sécurisés et on revient contrôler. L\'objectif est d\'éliminer la colonie et d\'empêcher son retour.',
+        'On repère les points d\'entrée, on installe des postes d\'appâtage sécurisés et on revient contrôler. L\'objectif est de traiter la colonie et d\'empêcher son retour.',
         'Pour les commerces et restaurants rennais, on met en place un plan de lutte et un registre conforme aux contrôles d\'hygiène.' ] },
       { h2: 'Particuliers, syndics et professionnels', paragraphs: [
         'On travaille avec les habitants, les syndics de copropriété et les professionnels de Rennes. On intervient en discrétion et on s\'adapte à vos horaires.',
@@ -609,16 +609,16 @@ const locals = [
     h1: 'Dératisation à Saint-Malo (35)',
     metaTitle: 'Dératisation à Saint-Malo (35) | HYNERA Environnement',
     ogTitle: 'Dératisation à Saint-Malo',
-    metaDescription: 'Dératisation à Saint-Malo et sur la côte d\'Émeraude. On élimine rats et souris, particuliers et professionnels. Intervention rapide depuis notre agence de Taden.',
+    metaDescription: 'Dératisation à Saint-Malo et sur la côte d\'Émeraude. On traite rats et souris, particuliers et professionnels. Intervention rapide depuis notre agence de Taden.',
     serviceName: 'Dératisation à Saint-Malo',
-    serviceDescription: 'Élimination des rongeurs à Saint-Malo et sur la côte d\'Émeraude.',
+    serviceDescription: 'Traitement des rongeurs à Saint-Malo et sur la côte d\'Émeraude.',
     intro: 'Depuis notre agence de Taden, tout près de Dinan, on intervient rapidement sur Saint-Malo et la côte d\'Émeraude contre les rats et les souris.',
     sections: [
       { h2: 'Présents sur la côte d\'Émeraude', paragraphs: [
         'Notre agence de Taden nous permet de couvrir Saint-Malo, Dinard, Cancale et toute la côte. On connaît les contraintes des zones portuaires et touristiques.',
         'La ville de Saint-Malo nous a confié un contrat de dératisation sur le domaine public, signe de la confiance des collectivités locales.' ] },
       { h2: 'Une méthode efficace et suivie', paragraphs: [
-        'On identifie les zones de passage, on pose des postes d\'appâtage sécurisés et on assure le suivi jusqu\'à élimination complète des rongeurs.',
+        'On identifie les zones de passage, on pose des postes d\'appâtage sécurisés et on assure le suivi jusqu\'au traitement complet des rongeurs.',
         'Pour les commerces du centre historique et les restaurants du port, on adapte nos horaires et on tient un registre conforme aux normes d\'hygiène.' ] },
       { h2: 'Pour les habitants et les professionnels', paragraphs: [
         'Maisons, appartements, commerces, restaurants : on traite chaque situation avec la même rigueur. On vous conseille aussi pour éviter le retour des rongeurs.',
@@ -675,7 +675,7 @@ const locals = [
     ogTitle: 'Désinsectisation à Rennes',
     metaDescription: 'Désinsectisation à Rennes : cafards, punaises de lit, fourmis, guêpes et frelons. On intervient chez vous sous 48h depuis notre siège de Bruz. Devis gratuit.',
     serviceName: 'Désinsectisation à Rennes',
-    serviceDescription: 'Élimination des insectes nuisibles à Rennes et dans l\'agglomération rennaise.',
+    serviceDescription: 'Traitement des insectes nuisibles à Rennes et dans l\'agglomération rennaise.',
     intro: 'Notre siège est à Bruz, aux portes de Rennes. On intervient sous 48h dans toute la métropole contre les cafards, punaises de lit, fourmis, guêpes et frelons.',
     sections: [
       { h2: 'Une intervention rapide sur Rennes', paragraphs: [

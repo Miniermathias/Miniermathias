@@ -8,14 +8,14 @@
 .contact-items{display:flex;flex-direction:column;gap:1.1rem;margin-bottom:2rem}
 .contact-item{display:flex;align-items:flex-start;gap:.9rem}
 .contact-icon{width:42px;height:42px;background:rgba(245,146,30,.14);border:1px solid rgba(245,146,30,.22);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.contact-icon svg{width:19px;height:19px;fill:var(--orange)}
+.contact-icon svg{width:19px;height:19px;fill:none;stroke:var(--orange);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .contact-label{display:block;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.2rem}
 .contact-value{font-weight:600;color:#fff;font-size:.93rem}
 .contact-value a{color:#fff;transition:color var(--t-fast)}
 .contact-value a:hover{color:var(--orange)}
 
 .emergency-box{background:rgba(245,146,30,.1);border:1px solid rgba(245,146,30,.25);border-radius:var(--r-md);padding:1rem 1.2rem;display:flex;align-items:flex-start;gap:.75rem}
-.emergency-box svg{width:20px;height:20px;fill:var(--orange);flex-shrink:0;margin-top:2px}
+.emergency-box svg{width:20px;height:20px;fill:none;stroke:var(--orange);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:2px}
 .emergency-box strong{display:block;font-size:.85rem;font-weight:700;color:var(--orange);margin-bottom:.2rem}
 .emergency-box span{font-size:.82rem;color:rgba(255,255,255,.6)}
 .emergency-box a{color:var(--orange);font-weight:700}

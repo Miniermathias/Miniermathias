@@ -18,7 +18,7 @@
 
 .agency-body{padding:1.5rem;display:flex;flex-direction:column;gap:1rem;flex:1}
 .agency-info{display:flex;align-items:flex-start;gap:.55rem;font-size:.85rem;color:var(--text-mid)}
-.agency-info svg{width:15px;height:15px;fill:var(--orange);flex-shrink:0;margin-top:2px}
+.agency-info svg{width:15px;height:15px;fill:none;stroke:var(--orange);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:2px}
 .agency-services{display:flex;flex-direction:column;gap:.35rem;padding-top:.25rem;border-top:1px solid var(--grey)}
 .agency-services li{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--text-mid)}
 .agency-services li::before{content:'';width:5px;height:5px;background:var(--orange);border-radius:50%;flex-shrink:0}

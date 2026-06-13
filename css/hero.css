@@ -33,7 +33,7 @@
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
 .hero-trust{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 .hero-trust-item{display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:rgba(255,255,255,.55)}
-.hero-trust-item svg{width:15px;height:15px;fill:var(--orange)}
+.hero-trust-item svg{width:15px;height:15px;fill:none;stroke:var(--orange);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .hero-trust-sep{width:1px;height:18px;background:rgba(255,255,255,.15)}
 
 /* Hero card */

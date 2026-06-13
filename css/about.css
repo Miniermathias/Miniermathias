@@ -3,11 +3,11 @@
 .about-content h2{color:var(--navy);margin-bottom:1.25rem}
 .about-content p{color:var(--text-mid);line-height:1.8;margin-bottom:1rem}
 
-.about-values{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1.75rem}
+.about-values{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:1.75rem}
 .about-value{display:flex;align-items:flex-start;gap:.75rem;padding:.9rem;background:var(--off-white);border-radius:var(--r-md);border:1px solid var(--grey);transition:border-color var(--t-fast),background var(--t-fast)}
 .about-value:hover{border-color:rgba(245,146,30,.3);background:rgba(245,146,30,.03)}
 .about-value-icon{width:34px;height:34px;background:rgba(245,146,30,.12);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.about-value-icon svg{width:17px;height:17px;fill:var(--orange)}
+.about-value-icon svg{width:18px;height:18px;fill:none;stroke:var(--orange);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .about-value strong{display:block;font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:.15rem}
 .about-value span{font-size:.76rem;color:var(--text-light)}
 

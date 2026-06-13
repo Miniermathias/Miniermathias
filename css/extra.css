@@ -1,7 +1,7 @@
 /* ============================================================
    EXTRA COMPONENTS
    Emergency banner, dropdown, breadcrumb, references, reviews,
-   founder, sticky call, cookie banner, service pages
+   sticky call, cookie banner, service pages
    ============================================================ */
 
 /* ---- Emergency banner (header) ---- */
@@ -46,7 +46,8 @@
 
 /* ---- Certification badges ---- */
 .certif-grid{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem}
-.certif-badge{display:flex;align-items:center;gap:.75rem;background:#fff;border:1px solid var(--grey);border-radius:var(--r-md);padding:.85rem 1.15rem;box-shadow:var(--shadow-sm)}
+.certif-badge{display:flex;align-items:center;gap:.75rem;background:#fff;border:1px solid var(--grey);border-radius:var(--r-md);padding:.85rem 1.15rem;box-shadow:var(--shadow-sm);text-decoration:none;color:inherit;transition:border-color var(--t-fast),box-shadow var(--t-fast)}
+a.certif-badge:hover,a.certif-badge:focus-visible{border-color:rgba(245,146,30,.35);box-shadow:var(--shadow-md)}
 .certif-mark{width:44px;height:44px;border-radius:var(--r-sm);flex-shrink:0;display:flex;align-items:center;justify-content:center}
 .certif-mark--ctba{background:#1B2D50}
 .certif-mark--certibio{background:#166534}
@@ -73,12 +74,6 @@
 .review-stars{color:#FDB833;font-size:1.15rem;letter-spacing:.05em}
 .review-cta{width:100%;justify-content:center}
 @media(max-width:700px){.reviews-grid{grid-template-columns:1fr}}
-
-/* ---- Founder ---- */
-.founder{display:flex;gap:1.1rem;align-items:flex-start;background:var(--off-white);border:1px solid var(--grey);border-left:3px solid var(--orange);border-radius:var(--r-md);padding:1.25rem;margin-top:1.75rem}
-.founder-avatar{width:54px;height:54px;flex-shrink:0;border-radius:50%;background:var(--grad-navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.1rem}
-.founder-text h3{color:var(--navy);font-size:1.05rem;margin-bottom:.35rem}
-.founder-text p{color:var(--text-mid);font-size:.9rem;line-height:1.7;margin:0}
 
 /* ---- Team photo placeholder ---- */
 .team-photo{margin-top:1.5rem;height:200px;border:2px dashed var(--orange);border-radius:var(--r-lg);background:repeating-linear-gradient(45deg,rgba(245,146,30,.04),rgba(245,146,30,.04) 12px,rgba(245,146,30,.08) 12px,rgba(245,146,30,.08) 24px);display:flex;align-items:center;justify-content:center}
@@ -164,7 +159,7 @@
 .other-services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
 .other-service{display:flex;align-items:center;gap:.6rem;padding:1rem;background:#fff;border:1px solid var(--grey);border-radius:var(--r-md);font-weight:600;color:var(--navy);font-size:.9rem;transition:border-color var(--t-fast),transform var(--t-spring),color var(--t-fast)}
 .other-service:hover{border-color:var(--orange);color:var(--orange);transform:translateY(-3px)}
-.other-service svg{width:18px;height:18px;fill:var(--orange);flex-shrink:0}
+.other-service svg{width:18px;height:18px;flex-shrink:0}
 
 /* Page CTA band */
 .cta-band{background:var(--grad-orange);text-align:center;padding:3rem 1.5rem;border-radius:var(--r-xl);margin-top:2.5rem}
