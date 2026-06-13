@@ -1,8 +1,8 @@
 #hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding-top:120px;padding-bottom:80px}
 
 #hero-canvas{position:absolute;inset:0;z-index:1;pointer-events:none}
-.hero-bg{position:absolute;inset:0;z-index:0;background:var(--grad-hero);background-size:300% 300%;animation:meshShift 14s ease-in-out infinite}
-@keyframes meshShift{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.hero-bg{position:absolute;inset:0;z-index:0;background:var(--grad-hero)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 70% 25%,rgba(245,146,30,.12),transparent 60%);pointer-events:none}
 
 /* Decorative dot grid, faded toward edges */
 .hero-pattern{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
