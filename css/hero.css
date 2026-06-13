@@ -4,6 +4,21 @@
 .hero-bg{position:absolute;inset:0;z-index:0;background:var(--grad-hero);background-size:300% 300%;animation:meshShift 14s ease-in-out infinite}
 @keyframes meshShift{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
 
+/* Decorative dot grid, faded toward edges */
+.hero-pattern{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.10) 1px,transparent 1.4px);
+  background-size:26px 26px;
+  -webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 38%,#000 0%,transparent 78%);
+  mask-image:radial-gradient(ellipse 75% 65% at 50% 38%,#000 0%,transparent 78%);
+}
+
+/* Reviews strip inside hero card */
+.hero-card-reviews{display:flex;align-items:center;gap:.6rem;padding:.7rem .85rem;margin-bottom:1rem;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-md)}
+.hcr-stars{color:#FDB833;font-size:.95rem;letter-spacing:.06em;flex-shrink:0}
+.hcr-text{font-size:.78rem;color:rgba(255,255,255,.7)}
+.hcr-text strong{color:#fff;font-weight:800}
+
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 
 /* Left */

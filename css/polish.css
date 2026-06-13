@@ -88,5 +88,18 @@ section[id]{scroll-margin-top:170px}
   .hero-bg{animation:none}
 }
 
-/* ---- Image rendering ---- */
+/* ---- Left-aligned overlines: leading dash ---- */
+.about-content>.overline::before,
+.contact-info .overline::before{
+  content:'';display:inline-block;width:22px;height:2px;border-radius:2px;
+  background:var(--orange);vertical-align:middle;margin-right:.55rem;
+}
+
+/* ---- Timeline body readability ---- */
+.timeline-body h4{font-size:1rem}
+
+/* ---- Process section spacing tie-in ---- */
+#process .section-header{margin-bottom:clamp(2rem,4vw,3rem)}
+
+/* ---- Generic image rendering ---- */
 img{image-rendering:auto}

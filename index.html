@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/process.css">
   <link rel="stylesheet" href="css/stats.css">
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/agencies.css">
@@ -122,6 +123,7 @@
           </div>
         </div>
 
+        <a href="#process"  class="nav-link" role="listitem">Méthode</a>
         <a href="#about"    class="nav-link" role="listitem">À propos</a>
         <a href="#agencies" class="nav-link" role="listitem">Agences</a>
         <a href="#reviews"  class="nav-link" role="listitem">Avis</a>
@@ -194,6 +196,7 @@
   <a href="depigeonnage.html"      class="mobile-link mobile-sub">Dépigeonnage</a>
   <a href="desinfection.html"      class="mobile-link mobile-sub">Désinfection</a>
   <a href="facade-toiture.html"    class="mobile-link mobile-sub">Façade et toiture</a>
+  <a href="#process"  class="mobile-link">Méthode</a>
   <a href="#about"    class="mobile-link">À propos</a>
   <a href="#agencies" class="mobile-link">Agences</a>
   <a href="#reviews"  class="mobile-link">Avis</a>
@@ -211,8 +214,9 @@
 
   <!-- ==================== HERO ==================== -->
   <section id="hero">
-    <canvas id="hero-canvas" aria-hidden="true"></canvas>
     <div class="hero-bg"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
     <div class="container hero-grid">
       <!-- Left -->
@@ -281,6 +285,10 @@
               <span class="hero-stat-num hero-stat-text">24-48h</span>
               <span class="hero-stat-lbl">délai d'intervention</span>
             </div>
+          </div>
+          <div class="hero-card-reviews">
+            <span class="hcr-stars" aria-hidden="true">★★★★★</span>
+            <span class="hcr-text"><strong>5/5</strong> sur Google et PagesJaunes</span>
           </div>
           <a href="tel:0299006235" class="hero-card-cta">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127 1 .36 1.99.7 2.93a2 2 0 01-.45 2.11L6.91 8.09A16 16 0 0015.91 17l.27-.27a2 2 0 012.11-.45c.94.34 1.93.57 2.93.7A2 2 0 0122 19z"/></svg>
@@ -445,6 +453,52 @@
         </article>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ==================== MÉTHODE ==================== -->
+  <section id="process" class="section section-grey">
+    <div class="container">
+      <div class="section-header">
+        <span class="overline reveal-fade">Notre méthode</span>
+        <h2 class="reveal-up">Comment on intervient chez vous</h2>
+        <p class="reveal-up" data-delay="100">Une méthode claire en quatre étapes, du premier appel jusqu'à la garantie de résultat.</p>
+      </div>
+
+      <ol class="process-grid">
+        <li class="process-step reveal-up">
+          <div class="process-num">1</div>
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Diagnostic sur place</h3>
+          <p>On identifie le nuisible, on repère les zones touchées et on évalue l'ampleur de l'infestation.</p>
+        </li>
+        <li class="process-step reveal-up" data-delay="100">
+          <div class="process-num">2</div>
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg>
+          </div>
+          <h3>Devis gratuit</h3>
+          <p>Un devis clair et sans engagement, sous 24 à 48h. Pas de jargon, pas de surprise sur la facture.</p>
+        </li>
+        <li class="process-step reveal-up" data-delay="200">
+          <div class="process-num">3</div>
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 21l3-3m0 0l9-9 3 3-9 9H6v-3zm9-9l3-3 3 3-3 3"/><path d="M14.5 5.5l4 4"/></svg>
+          </div>
+          <h3>Intervention ciblée</h3>
+          <p>Un traitement adapté au nuisible, avec des produits certifiés et respectueux de votre environnement.</p>
+        </li>
+        <li class="process-step reveal-up" data-delay="300">
+          <div class="process-num">4</div>
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 11 11.5 13.5 16 9"/></svg>
+          </div>
+          <h3>Suivi et garantie</h3>
+          <p>On vérifie que tout est réglé et on revient sans frais si le problème persiste. Résultat garanti.</p>
+        </li>
+      </ol>
     </div>
   </section>
 

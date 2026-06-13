@@ -1,0 +1,41 @@
+/* ============================================================
+   PROCESS — "Notre méthode" 4 steps
+   ============================================================ */
+.process-grid{
+  list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;
+  position:relative;counter-reset:step;
+}
+/* connecting line behind the cards (desktop) */
+.process-grid::before{
+  content:'';position:absolute;top:46px;left:12%;right:12%;height:2px;
+  background:repeating-linear-gradient(90deg,rgba(245,146,30,.45) 0 14px,transparent 14px 26px);
+  z-index:0;
+}
+
+.process-step{
+  position:relative;z-index:1;background:#fff;border:1px solid var(--grey);
+  border-radius:var(--r-lg);padding:2.25rem 1.5rem 1.75rem;text-align:center;
+  box-shadow:var(--shadow-sm);
+  transition:transform var(--t-spring),box-shadow var(--t-mid),border-color var(--t-mid);
+}
+.process-step:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:rgba(245,146,30,.35)}
+
+.process-num{
+  width:54px;height:54px;margin:0 auto .5rem;border-radius:50%;
+  background:var(--grad-navy);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-weight:900;font-size:1.4rem;
+  box-shadow:0 8px 24px rgba(27,45,80,.28);border:3px solid #fff;position:relative;
+}
+.process-step:hover .process-num{background:var(--grad-orange);box-shadow:var(--shadow-orange)}
+
+.process-icon{width:34px;height:34px;margin:.75rem auto .9rem}
+.process-icon svg{width:34px;height:34px;fill:none;stroke:var(--orange);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.process-step h3{color:var(--navy);font-size:1.05rem;margin-bottom:.5rem}
+.process-step p{color:var(--text-mid);font-size:.86rem;line-height:1.65}
+
+@media(max-width:900px){
+  .process-grid{grid-template-columns:repeat(2,1fr);gap:1.25rem}
+  .process-grid::before{display:none}
+}
+@media(max-width:520px){.process-grid{grid-template-columns:1fr;max-width:360px;margin-inline:auto}}
