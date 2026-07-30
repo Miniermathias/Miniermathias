@@ -15,8 +15,11 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:700}
 .section-header h2{margin-bottom:1rem}
 .section-header p{color:var(--text-mid);max-width:55ch;margin-inline:auto}
 
-.overline{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:.6rem}
-.text-orange{color:var(--orange)}
+.overline{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange-text);margin-bottom:.6rem}
+/* Sur fond sombre, l'orange vif reste lisible et conserve l'identité */
+.section-dark .overline,
+.contact-info .overline{color:var(--orange-light)}
+.text-orange{color:var(--orange-dark)}
 
 .skip-link{position:absolute;top:-100%;left:1rem;padding:.5rem 1rem;background:var(--orange);color:#fff;border-radius:var(--r-sm);z-index:var(--z-cursor);font-weight:700}
 .skip-link:focus{top:1rem}

@@ -96,7 +96,7 @@ section[id]{scroll-margin-top:170px}
 }
 
 /* ---- Timeline body readability ---- */
-.timeline-body h4{font-size:1rem}
+.timeline-body h3{font-size:1rem}
 
 /* ---- Generic image rendering ---- */
 img{image-rendering:auto}

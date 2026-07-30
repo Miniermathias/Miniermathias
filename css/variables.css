@@ -2,6 +2,7 @@
   --orange:        #F5921E;
   --orange-light:  #FEA84A;
   --orange-dark:   #D4750E;
+  --orange-text:   #B35900; /* orange assez foncé pour texte sur blanc (WCAG AA >=4.5:1) */
   --orange-glow:   rgba(245,146,30,.25);
 
   --navy:          #1B2D50;
@@ -15,7 +16,7 @@
   --grey:          #E4E9F0;
   --text:          #1A1A2E;
   --text-mid:      #4A5568;
-  --text-light:    #718096;
+  --text-light:    #66717F;
 
   --glass-navy:    rgba(27,45,80,.8);
   --glass-dark:    rgba(13,24,41,.9);

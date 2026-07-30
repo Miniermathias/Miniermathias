@@ -16,8 +16,8 @@
 
 .service-footer{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between}
 .service-badge{font-size:.72rem;font-weight:700;color:#16a34a;letter-spacing:.03em}
-.service-link{display:flex;align-items:center;gap:.35rem;font-size:.84rem;font-weight:700;color:var(--orange);font-family:var(--font-display);transition:gap var(--t-spring)}
-.service-link svg{width:16px;height:16px;fill:none;stroke:var(--orange);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--t-spring)}
+.service-link{display:flex;align-items:center;gap:.35rem;font-size:.84rem;font-weight:700;color:var(--orange-text);font-family:var(--font-display);transition:gap var(--t-spring)}
+.service-link svg{width:16px;height:16px;fill:none;stroke:var(--orange-text);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--t-spring)}
 .service-card:hover .service-link svg{transform:translateX(4px)}
 
 @media(max-width:640px){.services-grid{grid-template-columns:1fr}}

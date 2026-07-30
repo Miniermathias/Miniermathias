@@ -63,6 +63,13 @@
       document.addEventListener('click', function (e) {
         if (!dd.contains(e.target)) { dd.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
       });
+    } else if (toggle) {
+      /* Desktop: le menu s'ouvre au survol/focus via CSS — on garde aria-expanded synchronisé */
+      var syncAria = function (open) { toggle.setAttribute('aria-expanded', String(open)); };
+      dd.addEventListener('mouseenter', function () { syncAria(true); });
+      dd.addEventListener('mouseleave', function () { syncAria(false); });
+      dd.addEventListener('focusin',  function () { syncAria(true); });
+      dd.addEventListener('focusout', function (e) { if (!dd.contains(e.relatedTarget)) syncAria(false); });
     }
   }
 

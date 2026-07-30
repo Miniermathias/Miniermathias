@@ -19,6 +19,7 @@ function head(o) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${o.description}">
   <link rel="canonical" href="${SITE}/${o.slug}">
+  <link rel="icon" href="assets/logo-hynera.svg" type="image/svg+xml">
   <meta property="og:title" content="${o.ogTitle}">
   <meta property="og:description" content="${o.description}">
   <meta property="og:type" content="website">
@@ -93,9 +94,9 @@ const NAV = `
       <a href="desinfection.html" class="nav-service-link">Désinfection</a>
       <a href="facade-toiture.html" class="nav-service-link">Façade et toiture</a>
       <div class="nav-social">
-        <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-        <a href="https://instagram.com/hyneraenvironnement" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        <a href="https://www.tiktok.com/@hyneraenvironnement" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 000 12.68 6.34 6.34 0 006.33-6.34V8.94a8.16 8.16 0 004.77 1.53V7.02a4.85 4.85 0 01-1-.33z"/></svg></a>
+        <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook (nouvel onglet)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://instagram.com/hyneraenvironnement" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://www.tiktok.com/@hyneraenvironnement" target="_blank" rel="noopener" aria-label="TikTok (nouvel onglet)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 000 12.68 6.34 6.34 0 006.33-6.34V8.94a8.16 8.16 0 004.77 1.53V7.02a4.85 4.85 0 01-1-.33z"/></svg></a>
       </div>
     </div>
   </div>
@@ -123,9 +124,9 @@ const FOOTER = `
         <div class="footer-logo">HYNERA<span> Environnement</span></div>
         <p>Depuis 2003, on protège les particuliers et les professionnels de Bretagne contre les nuisibles.</p>
         <div class="footer-social">
-          <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          <a href="https://instagram.com/hyneraenvironnement" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          <a href="https://www.tiktok.com/@hyneraenvironnement" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77.5 2.89 2.89 0 012.89-3.39c.28 0 .54.04.79.1V9.01a6.34 6.34 0 105.56 6.29V8.94a8.16 8.16 0 004.77 1.53V7.02a4.85 4.85 0 01-1-.33z"/></svg></a>
+          <a href="https://facebook.com/HyneraBretagne" target="_blank" rel="noopener" aria-label="Facebook (nouvel onglet)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://instagram.com/hyneraenvironnement" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.tiktok.com/@hyneraenvironnement" target="_blank" rel="noopener" aria-label="TikTok (nouvel onglet)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77.5 2.89 2.89 0 012.89-3.39c.28 0 .54.04.79.1V9.01a6.34 6.34 0 105.56 6.29V8.94a8.16 8.16 0 004.77 1.53V7.02a4.85 4.85 0 01-1-.33z"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
@@ -789,7 +790,7 @@ function legalPage() {
       <ul>
         <li>Netlify, Inc.</li>
         <li>512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis</li>
-        <li>Site : <a href="https://www.netlify.com" target="_blank" rel="noopener">www.netlify.com</a></li>
+        <li>Site : <a href="https://www.netlify.com" target="_blank" rel="noopener" aria-label="www.netlify.com (nouvel onglet)">www.netlify.com</a></li>
       </ul>
 
       <h2 id="rgpd">Données personnelles et RGPD</h2>

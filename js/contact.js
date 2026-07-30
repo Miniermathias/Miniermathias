@@ -1,7 +1,5 @@
 export function initContactForm() {
   const form     = document.getElementById('contact-form');
-  const wrapper  = document.getElementById('form-wrapper');
-  const success  = document.getElementById('form-success');
   const feedback = document.getElementById('form-feedback');
   if (!form) return;
 
