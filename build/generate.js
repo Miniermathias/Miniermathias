@@ -24,7 +24,11 @@ function head(o) {
   <meta property="og:description" content="${o.description}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE}/${o.slug}">
-  <meta property="og:image" content="${SITE}/assets/og-hynera.svg">
+  <meta property="og:image" content="${SITE}/assets/og-hynera.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${SITE}/assets/og-hynera.png">
   <meta property="og:locale" content="fr_FR">
   <title>${o.title}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
