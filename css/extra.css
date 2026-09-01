@@ -51,6 +51,7 @@ a.certif-badge:hover,a.certif-badge:focus-visible{border-color:rgba(245,146,30,.
 .certif-mark{width:44px;height:44px;border-radius:var(--r-sm);flex-shrink:0;display:flex;align-items:center;justify-content:center}
 .certif-mark--ctba{background:#1B2D50}
 .certif-mark--certibio{background:#166534}
+.certif-mark--cepa{background:#0E5A8A}
 .certif-info strong{display:block;font-family:var(--font-display);font-weight:800;font-size:.88rem;color:var(--navy)}
 .certif-info span{font-size:.76rem;color:var(--text-mid)}
 

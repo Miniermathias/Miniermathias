@@ -163,7 +163,8 @@ const FOOTER = `
           <li><a href="mentions-legales.html#rgpd">Politique RGPD</a></li>
         </ul>
         <div class="footer-cert">
-          <span>✓ Certifié CTBA+</span>
+          <span>✓ Certifié CEPA (CEN 16636)</span>
+          <span>✓ Certifié CTB-A+</span>
           <span>✓ Agréé Certibiocide</span>
         </div>
       </div>
@@ -256,17 +257,10 @@ function serviceJsonLd(name, description) {
 function buildPage(cfg) {
   const jsonld = `  <script type="application/ld+json">\n${serviceJsonLd(cfg.serviceName, cfg.serviceDescription)}\n  </script>\n  <script type="application/ld+json">\n${faqJsonLd(cfg.faq)}\n  </script>`;
   const crumbCat = cfg.crumbCat || 'Services';
-  const photoPlaceholder = `<figure class="page-photo" aria-label="Photo de l'intervention ${cfg.crumb}">
-        <div class="page-photo-placeholder">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Photo à intégrer — ${cfg.crumb}</span>
-        </div>
-      </figure>`;
 
-  const contentHtml = cfg.sections.map((s, i) => {
+  const contentHtml = cfg.sections.map((s) => {
     let html = `<h2>${s.h2}</h2>\n        ` + s.paragraphs.map(p => `<p>${p}</p>`).join('\n        ');
     if (s.list) html += `\n        <ul>\n          ` + s.list.map(li => `<li>${li}</li>`).join('\n          ') + `\n        </ul>`;
-    if (i === 0) html += `\n        ${photoPlaceholder}`;
     return html;
   }).join('\n        ');
 
@@ -747,7 +741,7 @@ function engageSection() {
     list: [
       'Devis gratuit et sans engagement, après une visite sur place si nécessaire.',
       'Garantie de résultat : si le problème persiste, on revient sans frais.',
-      'Produits respectueux de l\'environnement, certifications CTBA+ et Certibiocide.',
+      'Produits respectueux de l\'environnement, certifications CEPA (CEN 16636), CTB-A+ et Certibiocide.',
       'Des conseils concrets pour éviter que le problème ne revienne.',
     ],
   };

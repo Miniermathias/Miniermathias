@@ -27,8 +27,7 @@ export function initCounters() {
     });
   }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
 
-  counters.forEach(el => {
-    el.textContent = '0';
-    obs.observe(el);
-  });
+  /* On NE réinitialise pas à 0 : la vraie valeur est dans le HTML et
+     doit rester affichée si le JS échoue ou si l'élément n'est jamais vu. */
+  counters.forEach(el => obs.observe(el));
 }
