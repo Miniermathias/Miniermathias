@@ -32,6 +32,9 @@
 /* Floating label */
 .form-group label{position:absolute;top:1rem;left:1rem;font-size:.88rem;color:var(--text-light);pointer-events:none;transition:top var(--t-fast),font-size var(--t-fast),color var(--t-fast);background:#fff;padding:0 .25rem}
 .form-group.focused label,.form-group.has-value label{top:-.5rem;font-size:.7rem;color:var(--orange);font-weight:700;letter-spacing:.04em}
+/* Les <select> affichent toujours leur option placeholder : le label reste en haut pour ne pas se superposer */
+.select-wrap label{top:-.5rem;font-size:.7rem;font-weight:700;letter-spacing:.04em}
+.select-wrap:not(.focused) label{color:var(--text-mid)}
 .form-group.error label{color:#ef4444}
 
 .form-input,.form-select,.form-textarea{width:100%;padding:1rem;border:1.5px solid var(--grey);border-radius:var(--r-md);font-size:.93rem;color:var(--text);transition:border-color var(--t-fast),box-shadow var(--t-fast);background:#fff;appearance:none;-webkit-appearance:none}

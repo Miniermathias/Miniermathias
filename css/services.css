@@ -22,3 +22,14 @@
 
 @media(max-width:640px){.services-grid{grid-template-columns:1fr}}
 @media(min-width:641px) and (max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Bannière astreinte en tête de section services */
+.services-alert{display:flex;align-items:center;gap:1rem;max-width:900px;margin:0 auto 2.5rem;padding:1rem 1.25rem;background:rgba(245,146,30,.08);border:1px solid rgba(245,146,30,.3);border-radius:var(--r-lg);text-decoration:none;color:var(--navy);transition:border-color var(--t-fast),box-shadow var(--t-fast),transform var(--t-spring)}
+.services-alert:hover{border-color:var(--orange);box-shadow:var(--shadow-sm);transform:translateY(-2px)}
+.services-alert-icon{flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--grad-orange);border-radius:50%;box-shadow:var(--shadow-orange)}
+.services-alert-icon svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.services-alert-text{flex:1;font-size:.9rem;line-height:1.5;color:var(--text-mid)}
+.services-alert-text strong{display:block;color:var(--navy);font-weight:800}
+.services-alert-cta{flex-shrink:0;padding:.6rem 1.4rem;background:var(--navy);color:#fff;border-radius:var(--r-full);font-family:var(--font-display);font-weight:700;font-size:.85rem;transition:background var(--t-fast)}
+.services-alert:hover .services-alert-cta{background:var(--orange-dark)}
+@media(max-width:600px){.services-alert{flex-direction:column;text-align:center}.services-alert-text{text-align:center}}
