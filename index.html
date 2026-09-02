@@ -954,13 +954,13 @@
                   <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group">
-                  <input class="form-input" type="email" id="email" name="email" placeholder=" " required>
-                  <label for="email">Email *</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder=" ">
+                  <label for="email">Email</label>
                   <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group">
-                  <input class="form-input" type="tel" id="telephone" name="telephone" placeholder=" ">
-                  <label for="telephone">Téléphone</label>
+                  <input class="form-input" type="tel" id="telephone" name="telephone" placeholder=" " required>
+                  <label for="telephone">Téléphone *</label>
                   <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group select-wrap">
@@ -976,6 +976,17 @@
                   </select>
                   <label for="service">Service concerné</label>
                 </div>
+                <div class="form-group select-wrap" id="service-detail-group" hidden>
+                  <select class="form-select" id="service-detail" name="nuisible">
+                    <option value="">Type de nuisible</option>
+                    <option>Frelons</option>
+                    <option>Guêpes</option>
+                    <option>Blattes</option>
+                    <option>Punaises de lit</option>
+                    <option>Autres insectes volants</option>
+                  </select>
+                  <label for="service-detail">Type de nuisible</label>
+                </div>
                 <div class="form-group select-wrap">
                   <select class="form-select" id="profil" name="profil">
                     <option value="">Choisissez votre profil</option>
@@ -984,6 +995,11 @@
                     <option>Collectivité</option>
                   </select>
                   <label for="profil">Type d'intervention</label>
+                </div>
+                <div class="form-group full">
+                  <input class="form-input" type="text" id="adresse" name="adresse" placeholder=" ">
+                  <label for="adresse">Adresse d'intervention</label>
+                  <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group select-wrap">
                   <select class="form-select" id="urgence" name="urgence">

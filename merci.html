@@ -256,6 +256,10 @@
     <div class="merci-urgence">
       <strong>Urgence frelon ou guêpe ?</strong> On intervient aussi les week-ends de juin à décembre. Appelez-nous pour une prise en charge rapide.
     </div>
+
+    <div class="merci-urgence" id="frelon-notice" hidden style="background:#ecfdf5;border-color:#a7f3d0;color:#065f46">
+      <strong style="color:#047857">Frelons asiatiques — aide possible :</strong> le traitement des nids de frelons asiatiques est souvent pris en charge, en partie ou en totalité, par votre commune. On vérifie le dispositif de votre mairie et on vous confirme le montant lors de notre rappel.
+    </div>
   </div>
 </section>
 </main>
@@ -333,6 +337,17 @@
   </div>
 </div>
 
+<script>
+  /* Affiche le rappel "prise en charge frelons" si la demande concernait des frelons (?n=frelon) */
+  (function () {
+    try {
+      if (new URLSearchParams(location.search).get('n') === 'frelon') {
+        var el = document.getElementById('frelon-notice');
+        if (el) el.hidden = false;
+      }
+    } catch (e) {}
+  })();
+</script>
 <script src="js/site.js" defer></script>
 </body>
 </html>
