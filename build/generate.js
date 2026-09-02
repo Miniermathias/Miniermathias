@@ -234,28 +234,64 @@ function serviceJsonLd(name, description) {
   return JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Service',
+    serviceType: name,
     name: name,
     description: description,
-    areaServed: 'Bretagne',
-    provider: {
-      '@type': 'LocalBusiness',
-      '@id': SITE + '/#business',
-      name: 'HYNERA Environnement',
-      telephone: TEL,
-      url: SITE,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '3 Impasse Pierre-Gilles De Gennes',
-        addressLocality: 'Bruz',
-        postalCode: '35170',
-        addressCountry: 'FR',
-      },
-    },
+    areaServed: { '@type': 'AdministrativeArea', name: 'Bretagne' },
+    provider: { '@id': SITE + '/#organization' },
+  }, null, 2);
+}
+
+/* 4.1 Organisation — sitewide */
+function organizationJsonLd() {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': SITE + '/#organization',
+    name: 'HYNERA Environnement',
+    legalName: 'HYNERA Environnement',
+    url: SITE + '/',
+    logo: { '@type': 'ImageObject', url: SITE + '/assets/logo-hynera.svg' },
+    foundingDate: '2003',
+    founder: { '@type': 'Person', name: 'Jacky Minier' },
+    email: 'contact@hynera.fr',
+    telephone: '+33299006235',
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Ille-et-Vilaine' },
+      { '@type': 'AdministrativeArea', name: 'Morbihan' },
+      { '@type': 'AdministrativeArea', name: "Côtes-d'Armor" },
+      { '@type': 'AdministrativeArea', name: 'Bretagne' },
+    ],
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'certification', name: 'CEPA Certified (norme CEN 16636)' },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'certification', name: 'CTB-A+ (traitement du bois)' },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'certification', name: 'Certibiocide' },
+    ],
+    sameAs: [
+      'https://facebook.com/HyneraBretagne',
+      'https://instagram.com/hyneraenvironnement',
+      'https://www.tiktok.com/@hyneraenvironnement',
+      'https://www.pagesjaunes.fr/pros/08967811',
+    ],
+  }, null, 2);
+}
+
+/* 4.5 Fil d'Ariane */
+function breadcrumbJsonLd(cfg) {
+  const crumbCat = cfg.crumbCat || 'Services';
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: SITE + '/' },
+      { '@type': 'ListItem', position: 2, name: crumbCat, item: SITE + '/#services' },
+      { '@type': 'ListItem', position: 3, name: cfg.crumb },
+    ],
   }, null, 2);
 }
 
 function buildPage(cfg) {
-  const jsonld = `  <script type="application/ld+json">\n${serviceJsonLd(cfg.serviceName, cfg.serviceDescription)}\n  </script>\n  <script type="application/ld+json">\n${faqJsonLd(cfg.faq)}\n  </script>`;
+  const jsonld = `  <script type="application/ld+json">\n${organizationJsonLd()}\n  </script>\n  <script type="application/ld+json">\n${breadcrumbJsonLd(cfg)}\n  </script>\n  <script type="application/ld+json">\n${serviceJsonLd(cfg.serviceName, cfg.serviceDescription)}\n  </script>\n  <script type="application/ld+json">\n${faqJsonLd(cfg.faq)}\n  </script>`;
   const crumbCat = cfg.crumbCat || 'Services';
 
   const contentHtml = cfg.sections.map((s) => {

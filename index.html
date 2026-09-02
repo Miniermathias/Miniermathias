@@ -54,6 +54,7 @@
     "telephone": "0299006235",
     "image": "https://www.hynera.fr/assets/og-hynera.png",
     "priceRange": "€€",
+    "parentOrganization": { "@id": "https://www.hynera.fr/#organization" },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "3 Impasse Pierre-Gilles De Gennes",
@@ -68,6 +69,40 @@
       "bestRating": "5",
       "reviewCount": "122"
     }
+  }
+  </script>
+
+  <!-- JSON-LD : Organization (sitewide) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.hynera.fr/#organization",
+    "name": "HYNERA Environnement",
+    "legalName": "HYNERA Environnement",
+    "url": "https://www.hynera.fr/",
+    "logo": { "@type": "ImageObject", "url": "https://www.hynera.fr/assets/logo-hynera.svg" },
+    "foundingDate": "2003",
+    "founder": { "@type": "Person", "name": "Jacky Minier" },
+    "email": "contact@hynera.fr",
+    "telephone": "+33299006235",
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Ille-et-Vilaine" },
+      { "@type": "AdministrativeArea", "name": "Morbihan" },
+      { "@type": "AdministrativeArea", "name": "Côtes-d'Armor" },
+      { "@type": "AdministrativeArea", "name": "Bretagne" }
+    ],
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CEPA Certified (norme CEN 16636)" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CTB-A+ (traitement du bois)" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Certibiocide" }
+    ],
+    "sameAs": [
+      "https://facebook.com/HyneraBretagne",
+      "https://instagram.com/hyneraenvironnement",
+      "https://www.tiktok.com/@hyneraenvironnement",
+      "https://www.pagesjaunes.fr/pros/08967811"
+    ]
   }
   </script>
 </head>

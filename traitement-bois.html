@@ -31,23 +31,103 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.hynera.fr/#organization",
+  "name": "HYNERA Environnement",
+  "legalName": "HYNERA Environnement",
+  "url": "https://www.hynera.fr/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.hynera.fr/assets/logo-hynera.svg"
+  },
+  "foundingDate": "2003",
+  "founder": {
+    "@type": "Person",
+    "name": "Jacky Minier"
+  },
+  "email": "contact@hynera.fr",
+  "telephone": "+33299006235",
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Ille-et-Vilaine"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Morbihan"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Côtes-d'Armor"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Bretagne"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "CEPA Certified (norme CEN 16636)"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "CTB-A+ (traitement du bois)"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Certibiocide"
+    }
+  ],
+  "sameAs": [
+    "https://facebook.com/HyneraBretagne",
+    "https://instagram.com/hyneraenvironnement",
+    "https://www.tiktok.com/@hyneraenvironnement",
+    "https://www.pagesjaunes.fr/pros/08967811"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://www.hynera.fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://www.hynera.fr/#services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Traitement du bois"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "Service",
+  "serviceType": "Traitement du bois",
   "name": "Traitement du bois",
   "description": "Traitement curatif et préventif des bois et charpentes contre les insectes xylophages et les champignons.",
-  "areaServed": "Bretagne",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Bretagne"
+  },
   "provider": {
-    "@type": "LocalBusiness",
-    "@id": "https://www.hynera.fr/#business",
-    "name": "HYNERA Environnement",
-    "telephone": "0299006235",
-    "url": "https://www.hynera.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "3 Impasse Pierre-Gilles De Gennes",
-      "addressLocality": "Bruz",
-      "postalCode": "35170",
-      "addressCountry": "FR"
-    }
+    "@id": "https://www.hynera.fr/#organization"
   }
 }
   </script>
