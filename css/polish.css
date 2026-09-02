@@ -32,6 +32,9 @@ section[id]{scroll-margin-top:170px}
 .reveal-up,.reveal-left,.reveal-right{transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
 
 /* ---- Section header: decorative accent under titles ---- */
+/* L'overline doit rester au-dessus du titre : le h2 est en inline-block (pour
+   le trait ::after), donc sans ceci l'overline inline-block se colle à sa gauche. */
+.section-header .overline{display:block}
 .section-header h2{position:relative;display:inline-block;padding-bottom:.85rem}
 .section-header h2::after{
   content:'';position:absolute;left:50%;bottom:0;transform:translateX(-50%);
