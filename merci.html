@@ -350,29 +350,36 @@
         return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
       });
     }
+    /* La mairie prend-elle en charge le traitement des frelons ASIATIQUES ? */
+    function mairieCovers(mpc) {
+      if (!mpc) return false;
+      var u = mpc.toUpperCase();
+      if (/PAS DE PRISE|PLUS DE PRISE/.test(u)) return false;
+      /* dispositifs qui ne concernent que les frelons européens / communs -> pas pour l'asiatique */
+      if (/EUROP|FRELONS COMMUNS/.test(u) && !/\bFA\b|ASIATIQUE/.test(u)) return false;
+      if (/\bFE\b/.test(u) && !/\bFA\b|ASIATIQUE/.test(u)) return false;
+      /* doit indiquer une prise en charge chiffrée (%, €, forfait, remboursement) */
+      return /\d\s*%/.test(u) || /€|EURO|FORFAIT|REMBOURS/.test(u);
+    }
     try {
       var q = new URLSearchParams(location.search);
       if (q.get('n') !== 'frelon') return;
       var el = document.getElementById('frelon-notice');
       if (!el) return;
-      el.hidden = false;               /* message générique affiché par défaut */
       var ville = (q.get('v') || '').trim();
-      if (!ville) return;
+      if (!ville) return;              /* pas de ville -> rien */
       fetch('data/frelons-fgdon.json')
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (data) {
           if (!data) return;
           var rec = data[normKey(ville)];
-          if (!rec) return;            /* commune inconnue -> on garde le générique */
-          var lines = [];
-          if (rec.ccpc) lines.push('<li><strong>Intercommunalité :</strong> ' + esc(rec.ccpc) + '</li>');
-          if (rec.mpc)  lines.push('<li><strong>Mairie :</strong> ' + esc(rec.mpc) + '</li>');
-          if (rec.ppc)  lines.push('<li><strong>Reste à charge (particulier) :</strong> ' + esc(rec.ppc) + '</li>');
+          if (!rec) return;            /* commune inconnue -> rien */
+          if (!mairieCovers(rec.mpc)) return; /* mairie ne prend pas en charge -> rien */
           el.innerHTML =
-            '<strong style="color:#047857">Frelons asiatiques — prise en charge à ' + esc(rec.n) + '</strong>' +
-            (rec.cc ? '<div style="font-size:.82rem;opacity:.85;margin:.15rem 0 .35rem">' + esc(rec.cc) + '</div>' : '') +
-            (lines.length ? '<ul style="margin:.35rem 0 .4rem 1.1rem;padding:0;font-size:.9rem">' + lines.join('') + '</ul>' : '') +
-            '<span style="font-size:.85rem">On confirme les conditions exactes (validation par le référent communal ou la mairie, FGDON) lors de notre rappel.</span>';
+            '<strong style="color:#047857">Frelons asiatiques — prise en charge par la Mairie de ' + esc(rec.n) + '</strong>' +
+            '<div style="margin-top:.35rem;font-size:.9rem"><strong>Mairie :</strong> ' + esc(rec.mpc) + '</div>' +
+            '<span style="display:block;margin-top:.4rem;font-size:.85rem">Le montant et les conditions exactes (domaine public ou privé, validation par la mairie ou le FGDON) sont confirmés lors de notre rappel.</span>';
+          el.hidden = false;           /* affiché uniquement si la mairie prend en charge */
         })
         .catch(function () {});
     } catch (e) {}
