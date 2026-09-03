@@ -17,6 +17,13 @@ export function initContactForm() {
   }
   if (serviceSel) { serviceSel.addEventListener('change', toggleDetail); toggleDetail(); }
 
+  /* Efface l'erreur RGPD dès que la case est cochée */
+  const consentBox = document.getElementById('rgpd');
+  if (consentBox) consentBox.addEventListener('change', () => {
+    const ce = document.getElementById('rgpd-error');
+    if (consentBox.checked && ce) { ce.style.display = 'none'; ce.textContent = ''; }
+  });
+
   /* Floating labels */
   form.querySelectorAll('.form-group').forEach(g => {
     const inp = g.querySelector('input,textarea,select');
@@ -49,7 +56,8 @@ export function initContactForm() {
     email:     { fn: s => s === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s), msg: 'Email invalide.' },
     telephone: { fn: s => /^(\+33|0)[1-9](\d{2}){4}$/.test(s.replace(/\s/g, '')), msg: 'Téléphone requis (ex. 02 99 00 62 35).' },
     message:   { fn: s => s.trim().length >= 10,                msg: 'Message trop court (10 min).' },
-    code_postal:{ fn: s => s === '' || /^\d{5}$/.test(s.trim()), msg: 'Code postal à 5 chiffres.' },
+    ville:     { fn: s => s.trim().length >= 2,                 msg: 'Ville requise.' },
+    code_postal:{ fn: s => /^\d{5}$/.test(s.trim()),           msg: 'Code postal requis (5 chiffres).' },
   };
 
   function setError(g, msg) {
@@ -87,6 +95,15 @@ export function initContactForm() {
       const g = inp.closest('.form-group');
       if (!vr.fn(inp.value)) { setError(g, vr.msg); ok = false; } else clearError(g);
     });
+
+    /* Consentement RGPD obligatoire (case à cocher) */
+    const consent = document.getElementById('rgpd');
+    const consentErr = document.getElementById('rgpd-error');
+    if (consent && !consent.checked) {
+      if (consentErr) { consentErr.textContent = "Merci de cocher cette case pour accepter l'utilisation de vos données."; consentErr.style.display = 'block'; }
+      ok = false;
+    } else if (consentErr) { consentErr.style.display = 'none'; consentErr.textContent = ''; }
+
     if (!ok) return;
 
     const btn = document.getElementById('form-submit');
@@ -96,9 +113,11 @@ export function initContactForm() {
     const data = new URLSearchParams(new FormData(form)).toString();
 
     try {
-      const res = await fetch('/', {
+      /* TEMPORAIRE : envoi des demandes par e-mail via FormSubmit (mathiasminier7@gmail.com).
+         Pour repasser à Netlify Forms plus tard : remettre fetch('/'). */
+      const res = await fetch('https://formsubmit.co/ajax/mathiasminier7@gmail.com', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json' },
         body: data,
       });
       btn.classList.remove('loading');
@@ -118,9 +137,8 @@ export function initContactForm() {
     } catch (err) {
       btn.classList.remove('loading');
       btn.disabled = false;
-      /* Netlify Forms only works once deployed. Locally the POST fails. */
       const frelon = detailSel && detailSel.value === 'Frelons asiatiques';
-      showFeedback('info', (frelon ? FRELON_MSG + ' ' : '') + "L'envoi fonctionne une fois le site en ligne (Netlify). En attendant, appelez-nous au 02 99 00 62 35.");
+      showFeedback('info', (frelon ? FRELON_MSG + ' ' : '') + "L'envoi n'a pas pu aboutir. Vérifiez votre connexion ou appelez-nous au 02 99 00 62 35.");
     }
   });
 }

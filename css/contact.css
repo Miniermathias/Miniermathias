@@ -51,6 +51,13 @@
 .char-counter.warn{color:#f59e0b}
 .char-counter.max{color:#ef4444}
 
+/* Consentement RGPD */
+.form-consent{display:flex;align-items:flex-start;gap:.6rem;margin:.25rem 0 .75rem}
+.form-consent input[type=checkbox]{margin-top:.15rem;width:18px;height:18px;flex-shrink:0;accent-color:var(--orange);cursor:pointer}
+.form-consent label{font-size:.82rem;color:var(--text-mid);line-height:1.5;cursor:pointer}
+.form-consent a{color:var(--orange-text);font-weight:600}
+#rgpd-error{margin:-.4rem 0 .9rem}
+
 .form-submit{width:100%;padding:1.05rem;background:var(--grad-orange);color:#fff;border-radius:var(--r-md);font-family:var(--font-display);font-weight:800;font-size:.98rem;display:flex;align-items:center;justify-content:center;gap:.6rem;box-shadow:var(--shadow-orange);transition:transform var(--t-mid),box-shadow var(--t-mid);margin-top:.25rem}
 .form-submit:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 16px 40px rgba(245,146,30,.45)}
 .form-submit:disabled{opacity:.7;cursor:not-allowed}

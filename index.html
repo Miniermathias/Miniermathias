@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/logo-hynera.svg" type="image/svg+xml">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="HYNERA Environnement, lutte contre les nuisibles en Bretagne">
+  <meta property="og:title" content="Hynera-Environnement, lutte contre les nuisibles en Bretagne">
   <meta property="og:description" content="Désinsectisation, dératisation, traitement du bois et dépigeonnage. On intervient chez vous sous 24 à 48h à Rennes et en Bretagne.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.hynera.fr/">
@@ -19,7 +19,7 @@
   <meta name="twitter:image" content="https://www.hynera.fr/assets/og-hynera.png">
   <meta property="og:locale" content="fr_FR">
 
-  <title>HYNERA Environnement, lutte contre les nuisibles à Rennes et en Bretagne</title>
+  <title>Hynera-Environnement, lutte contre les nuisibles à Rennes et en Bretagne</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -961,6 +961,11 @@
             <p class="form-subtitle">On vous répond sous 24 à 48h.</p>
             <form id="contact-form" name="contact" method="POST" action="/merci" data-netlify="true" netlify-honeypot="bot-field" novalidate>
               <input type="hidden" name="form-name" value="contact">
+              <!-- FormSubmit (envoi e-mail temporaire) -->
+              <input type="hidden" name="_subject" value="Nouvelle demande de devis — Hynera-Environnement">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
               <p class="hp-field" hidden aria-hidden="true">
                 <label>Ne remplissez pas ce champ : <input name="bot-field"></label>
               </p>
@@ -1020,12 +1025,13 @@
                   <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group">
-                  <input class="form-input" type="text" id="ville" name="ville" placeholder=" ">
-                  <label for="ville">Ville d'intervention</label>
+                  <input class="form-input" type="text" id="ville" name="ville" placeholder=" " required>
+                  <label for="ville">Ville d'intervention *</label>
+                  <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group">
-                  <input class="form-input" type="text" id="code-postal" name="code_postal" placeholder=" " inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
-                  <label for="code-postal">Code postal</label>
+                  <input class="form-input" type="text" id="code-postal" name="code_postal" placeholder=" " inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required>
+                  <label for="code-postal">Code postal *</label>
                   <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group full">
@@ -1034,6 +1040,11 @@
                   <span class="char-counter"><span id="char-count">0</span> / 500</span>
                 </div>
               </div>
+              <div class="form-consent" id="form-consent">
+                <input type="checkbox" id="rgpd" name="rgpd" value="oui" required>
+                <label for="rgpd">J'accepte que ces données soient utilisées par Hynera-Environnement pour traiter ma demande et me recontacter. <a href="mentions-legales.html#rgpd">En savoir plus</a>.</label>
+              </div>
+              <span class="form-error-msg" id="rgpd-error"></span>
               <button type="submit" class="form-submit" id="form-submit">
                 <span class="submit-text">
                   Envoyer ma demande
