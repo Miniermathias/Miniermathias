@@ -17,6 +17,47 @@ export function initContactForm() {
   }
   if (serviceSel) { serviceSel.addEventListener('change', toggleDetail); toggleDetail(); }
 
+  /* Code postal -> communes d'Ille-et-Vilaine (suggestions + remplissage) */
+  const cpInput    = document.getElementById('code-postal');
+  const villeInput = document.getElementById('ville');
+  const cpHint     = document.getElementById('cp-communes');
+  const villeList  = document.getElementById('villes-35');
+  let cpTimer;
+  function lookupCommunes() {
+    if (!cpInput) return;
+    const cp = (cpInput.value || '').trim();
+    if (cpHint) { cpHint.textContent = ''; cpHint.hidden = true; }
+    if (villeList) villeList.innerHTML = '';
+    if (!/^\d{5}$/.test(cp)) return;
+    fetch('https://geo.api.gouv.fr/communes?codePostal=' + cp + '&fields=nom,codeDepartement&format=json')
+      .then(r => (r.ok ? r.json() : []))
+      .then(list => {
+        const communes = (Array.isArray(list) ? list : [])
+          .filter(c => c.codeDepartement === '35')          /* Ille-et-Vilaine uniquement */
+          .map(c => c.nom)
+          .sort((a, b) => a.localeCompare(b, 'fr'));
+        if (!communes.length) return;
+        if (villeList) {
+          villeList.innerHTML = communes
+            .map(n => '<option value="' + n.replace(/"/g, '&quot;') + '"></option>').join('');
+        }
+        if (communes.length === 1 && villeInput && !villeInput.value.trim()) {
+          villeInput.value = communes[0];
+          const g = villeInput.closest('.form-group');
+          if (g) g.classList.add('has-value');
+        }
+        if (cpHint) {
+          cpHint.textContent = (communes.length === 1 ? 'Commune : ' : 'Communes : ') + communes.join(', ');
+          cpHint.hidden = false;
+        }
+      })
+      .catch(() => {});
+  }
+  if (cpInput) {
+    cpInput.addEventListener('input', () => { clearTimeout(cpTimer); cpTimer = setTimeout(lookupCommunes, 350); });
+    cpInput.addEventListener('blur', lookupCommunes);
+  }
+
   /* Efface l'erreur RGPD dès que la case est cochée */
   const consentBox = document.getElementById('rgpd');
   if (consentBox) consentBox.addEventListener('change', () => {
@@ -55,7 +96,6 @@ export function initContactForm() {
     nom:       { fn: s => s.trim().length >= 2,                 msg: 'Nom requis (2 caractères min).' },
     email:     { fn: s => s === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s), msg: 'Email invalide.' },
     telephone: { fn: s => /^(\+33|0)[1-9](\d{2}){4}$/.test(s.replace(/\s/g, '')), msg: 'Téléphone requis (ex. 02 99 00 62 35).' },
-    message:   { fn: s => s.trim().length >= 10,                msg: 'Message trop court (10 min).' },
     ville:     { fn: s => s.trim().length >= 2,                 msg: 'Ville requise.' },
     code_postal:{ fn: s => /^\d{5}$/.test(s.trim()),           msg: 'Code postal requis (5 chiffres).' },
   };
@@ -127,9 +167,9 @@ export function initContactForm() {
         const frelon = detailSel && detailSel.value === 'Frelons asiatiques';
         if (frelon) {
           const ville = (document.getElementById('ville')?.value || '').trim();
-          window.location.href = '/merci?n=frelon' + (ville ? '&v=' + encodeURIComponent(ville) : '');
+          window.location.href = 'merci.html?n=frelon' + (ville ? '&v=' + encodeURIComponent(ville) : '');
         } else {
-          window.location.href = '/merci';
+          window.location.href = 'merci.html';
         }
       } else {
         showFeedback('error', "Une erreur est survenue. Appelez-nous au 02 99 00 62 35.");

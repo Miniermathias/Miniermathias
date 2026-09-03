@@ -51,6 +51,9 @@
 .char-counter.warn{color:#f59e0b}
 .char-counter.max{color:#ef4444}
 
+/* Communes suggérées d'après le code postal */
+.cp-hint{display:block;font-size:.73rem;color:var(--text-mid);margin-top:.35rem;line-height:1.45}
+
 /* Consentement RGPD */
 .form-consent{display:flex;align-items:flex-start;gap:.6rem;margin:.25rem 0 .75rem}
 .form-consent input[type=checkbox]{margin-top:.15rem;width:18px;height:18px;flex-shrink:0;accent-color:var(--orange);cursor:pointer}
