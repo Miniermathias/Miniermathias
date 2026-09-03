@@ -338,13 +338,43 @@
 </div>
 
 <script>
-  /* Affiche le rappel "prise en charge frelons" si la demande concernait des frelons (?n=frelon) */
+  /* Rappel "prise en charge frelons asiatiques", personnalisé selon la ville (?n=frelon&v=Ville) */
   (function () {
+    function normKey(s) {
+      s = s.normalize ? s.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : s;
+      s = s.toUpperCase().replace(/\bSTE\b/g, 'SAINTE').replace(/\bST\b/g, 'SAINT');
+      return s.replace(/[^A-Z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
+    }
+    function esc(s) {
+      return String(s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    }
     try {
-      if (new URLSearchParams(location.search).get('n') === 'frelon') {
-        var el = document.getElementById('frelon-notice');
-        if (el) el.hidden = false;
-      }
+      var q = new URLSearchParams(location.search);
+      if (q.get('n') !== 'frelon') return;
+      var el = document.getElementById('frelon-notice');
+      if (!el) return;
+      el.hidden = false;               /* message générique affiché par défaut */
+      var ville = (q.get('v') || '').trim();
+      if (!ville) return;
+      fetch('data/frelons-fgdon.json')
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data) return;
+          var rec = data[normKey(ville)];
+          if (!rec) return;            /* commune inconnue -> on garde le générique */
+          var lines = [];
+          if (rec.ccpc) lines.push('<li><strong>Intercommunalité :</strong> ' + esc(rec.ccpc) + '</li>');
+          if (rec.mpc)  lines.push('<li><strong>Mairie :</strong> ' + esc(rec.mpc) + '</li>');
+          if (rec.ppc)  lines.push('<li><strong>Reste à charge (particulier) :</strong> ' + esc(rec.ppc) + '</li>');
+          el.innerHTML =
+            '<strong style="color:#047857">Frelons asiatiques — prise en charge à ' + esc(rec.n) + '</strong>' +
+            (rec.cc ? '<div style="font-size:.82rem;opacity:.85;margin:.15rem 0 .35rem">' + esc(rec.cc) + '</div>' : '') +
+            (lines.length ? '<ul style="margin:.35rem 0 .4rem 1.1rem;padding:0;font-size:.9rem">' + lines.join('') + '</ul>' : '') +
+            '<span style="font-size:.85rem">On confirme les conditions exactes (validation par le référent communal ou la mairie, FGDON) lors de notre rappel.</span>';
+        })
+        .catch(function () {});
     } catch (e) {}
   })();
 </script>

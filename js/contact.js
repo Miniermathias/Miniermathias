@@ -106,7 +106,12 @@ export function initContactForm() {
 
       if (res.ok) {
         const frelon = detailSel && detailSel.value === 'Frelons asiatiques';
-        window.location.href = frelon ? '/merci?n=frelon' : '/merci';
+        if (frelon) {
+          const ville = (document.getElementById('ville')?.value || '').trim();
+          window.location.href = '/merci?n=frelon' + (ville ? '&v=' + encodeURIComponent(ville) : '');
+        } else {
+          window.location.href = '/merci';
+        }
       } else {
         showFeedback('error', "Une erreur est survenue. Appelez-nous au 02 99 00 62 35.");
       }
