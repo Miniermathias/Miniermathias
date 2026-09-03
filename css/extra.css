@@ -1,8 +1,31 @@
 /* ============================================================
    EXTRA COMPONENTS
    Emergency banner, dropdown, breadcrumb, references, reviews,
-   sticky call, cookie banner, service pages
+   sticky call, cookie banner, service pages, actualités
    ============================================================ */
+
+/* ---- Actualités ---- */
+.actu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.actu-card{background:#fff;border:1px solid var(--grey);border-radius:var(--r-lg);padding:1.75rem;box-shadow:var(--shadow-sm);transition:transform var(--t-spring),box-shadow var(--t-mid),border-color var(--t-mid);display:flex;flex-direction:column;gap:.6rem}
+.actu-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:rgba(245,146,30,.35)}
+.actu-date{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-text)}
+.actu-title{font-size:1.12rem;color:var(--navy);line-height:1.3}
+.actu-excerpt{font-size:.9rem;color:var(--text-mid);line-height:1.6;flex:1}
+.actu-link{align-self:flex-start;font-family:var(--font-display);font-weight:700;font-size:.85rem;color:var(--orange-text);display:inline-flex;align-items:center;gap:.35rem}
+.actu-link::after{content:'\2192';transition:transform var(--t-spring)}
+.actu-card:hover .actu-link::after{transform:translateX(3px)}
+.actu-all{text-align:center;margin-top:2.5rem}
+.actu-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.actu-article{max-width:760px;margin:0 auto}
+.actu-back{display:inline-block;margin-bottom:1.25rem;color:var(--orange-text);font-weight:600}
+.actu-back:hover{text-decoration:underline}
+.actu-article .actu-date{display:block;margin-bottom:.4rem}
+.actu-article-title{color:var(--navy);margin:.25rem 0 1.25rem;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15}
+.actu-body{color:var(--text-mid);line-height:1.8;font-size:1rem}
+.actu-body p{margin-bottom:1rem}
+.actu-body h2{color:var(--navy);margin:1.75rem 0 .75rem;font-size:1.3rem}
+.actu-body ul{margin:0 0 1rem 1.25rem}
+.actu-body li{margin-bottom:.4rem}
 
 /* ---- Emergency banner (header) ---- */
 .emergency-banner{display:flex;align-items:center;justify-content:center;gap:.55rem;background:#c0392b;color:#fff;padding:.5rem 1rem;font-size:.82rem;font-weight:600;text-align:center;line-height:1.35;transition:background var(--t-fast)}

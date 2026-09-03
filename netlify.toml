@@ -55,6 +55,10 @@
   from = "/merci"
   to = "/merci.html"
   status = 200
+[[redirects]]
+  from = "/actualites"
+  to = "/actualites.html"
+  status = 200
 
 # ── Sécurité (en-têtes appliqués à tout le site) ──
 [[headers]]
