@@ -979,7 +979,8 @@
                 <div class="form-group select-wrap" id="service-detail-group" hidden>
                   <select class="form-select" id="service-detail" name="nuisible">
                     <option value="">Type de nuisible</option>
-                    <option>Frelons</option>
+                    <option>Frelons asiatiques</option>
+                    <option>Frelons européens</option>
                     <option>Guêpes</option>
                     <option>Blattes</option>
                     <option>Punaises de lit</option>
@@ -999,6 +1000,15 @@
                 <div class="form-group full">
                   <input class="form-input" type="text" id="adresse" name="adresse" placeholder=" ">
                   <label for="adresse">Adresse d'intervention</label>
+                  <span class="form-error-msg"></span>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" type="text" id="ville" name="ville" placeholder=" ">
+                  <label for="ville">Ville d'intervention</label>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" type="text" id="code-postal" name="code_postal" placeholder=" " inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
+                  <label for="code-postal">Code postal</label>
                   <span class="form-error-msg"></span>
                 </div>
                 <div class="form-group select-wrap">

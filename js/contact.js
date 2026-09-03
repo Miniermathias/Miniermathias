@@ -49,6 +49,7 @@ export function initContactForm() {
     email:     { fn: s => s === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s), msg: 'Email invalide.' },
     telephone: { fn: s => /^(\+33|0)[1-9](\d{2}){4}$/.test(s.replace(/\s/g, '')), msg: 'Téléphone requis (ex. 02 99 00 62 35).' },
     message:   { fn: s => s.trim().length >= 10,                msg: 'Message trop court (10 min).' },
+    code_postal:{ fn: s => s === '' || /^\d{5}$/.test(s.trim()), msg: 'Code postal à 5 chiffres.' },
   };
 
   function setError(g, msg) {
@@ -104,7 +105,7 @@ export function initContactForm() {
       btn.disabled = false;
 
       if (res.ok) {
-        const frelon = detailSel && detailSel.value === 'Frelons';
+        const frelon = detailSel && detailSel.value === 'Frelons asiatiques';
         window.location.href = frelon ? '/merci?n=frelon' : '/merci';
       } else {
         showFeedback('error', "Une erreur est survenue. Appelez-nous au 02 99 00 62 35.");
@@ -113,7 +114,7 @@ export function initContactForm() {
       btn.classList.remove('loading');
       btn.disabled = false;
       /* Netlify Forms only works once deployed. Locally the POST fails. */
-      const frelon = detailSel && detailSel.value === 'Frelons';
+      const frelon = detailSel && detailSel.value === 'Frelons asiatiques';
       showFeedback('info', (frelon ? FRELON_MSG + ' ' : '') + "L'envoi fonctionne une fois le site en ligne (Netlify). En attendant, appelez-nous au 02 99 00 62 35.");
     }
   });
