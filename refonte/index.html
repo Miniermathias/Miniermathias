@@ -235,7 +235,6 @@
             <div class="agency-head"><p class="agency-dep">Morbihan (56)</p><h3>Ploërmel</h3></div>
             <div class="agency-body">
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Le Val Torin, 56800 Ploërmel</p>
-            <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Lun. au ven. 8h30 à 18h30</p>
             <a class="agency-map" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Val+Torin+56800+Ploermel" target="_blank" rel="noopener">Itinéraire<span class="sr-only"> vers l'agence de Ploërmel (nouvel onglet)</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </article>
@@ -243,7 +242,6 @@
             <div class="agency-head"><p class="agency-dep">Côtes-d'Armor (22)</p><h3>Taden</h3></div>
             <div class="agency-body">
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>301 rue de la Tramontane, ZA des Alleux, 22100 Taden</p>
-            <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Lun. au ven. 8h30 à 18h30</p>
             <a class="agency-map" href="https://www.google.com/maps/search/?api=1&amp;query=301+rue+de+la+Tramontane+22100+Taden" target="_blank" rel="noopener">Itinéraire<span class="sr-only"> vers l'agence de Taden (nouvel onglet)</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </article>
@@ -399,8 +397,9 @@
               <p class="field-help" id="frelon-help" hidden>Asiatique : pattes jaunes, corps sombre. Européen : plus gros, abdomen jaune rayé. Dans le doute, choisissez « Frelons asiatiques », on vérifiera sur place.</p>
             </div>
             <div class="field field-full">
-              <label for="adresse">Adresse d'intervention</label>
-              <input id="adresse" name="adresse" type="text" autocomplete="street-address">
+              <label for="adresse">Adresse d'intervention <span class="req" aria-hidden="true">*</span></label>
+              <input id="adresse" name="adresse" type="text" autocomplete="street-address" placeholder="N° et nom de rue" required aria-describedby="adresse-err">
+              <p class="field-err" id="adresse-err"></p>
             </div>
             <div class="field">
               <label for="code_postal">Code postal <span class="req" aria-hidden="true">*</span></label>

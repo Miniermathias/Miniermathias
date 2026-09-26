@@ -119,6 +119,7 @@
       return /^(\+33|0033|0)[1-9]\d{8}$/.test(d) ? '' : 'Indiquez un numéro valide, par exemple 06 12 34 56 78.';
     },
     email: function (s) { return s === '' || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s.trim()) ? '' : 'Cette adresse e-mail semble incomplète.'; },
+    adresse: function (s) { return s.trim().length >= 5 ? '' : 'Indiquez l\'adresse d\'intervention (numéro et rue).'; },
     code_postal: function (s) { return /^\d{5}$/.test(s.trim()) ? '' : 'Indiquez un code postal à 5 chiffres.'; },
     ville: function (s) { return s.trim().length >= 2 ? '' : 'Indiquez la ville d\'intervention.'; }
   };
