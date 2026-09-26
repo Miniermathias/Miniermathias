@@ -163,7 +163,11 @@ export function initContactForm() {
       btn.classList.remove('loading');
       btn.disabled = false;
 
-      if (res.ok) {
+      /* FormSubmit peut répondre 200 avec success:"false" (formulaire non activé, etc.) */
+      const json = await res.json().catch(() => null);
+      const sent = res.ok && !(json && String(json.success) === 'false');
+
+      if (sent) {
         const frelon = detailSel && detailSel.value === 'Frelons asiatiques';
         if (frelon) {
           const ville = (document.getElementById('ville')?.value || '').trim();
