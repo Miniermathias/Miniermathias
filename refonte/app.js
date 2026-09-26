@@ -31,6 +31,27 @@
     });
   }
 
+  /* ---------- Avis : flèches du carrousel ---------- */
+  var track = document.getElementById('reviews-track');
+  if (track) {
+    var btns = document.querySelectorAll('.reviews-btn');
+    var updateBtns = function () {
+      var max = track.scrollWidth - track.clientWidth - 2;
+      btns[0].disabled = track.scrollLeft <= 2;
+      btns[1].disabled = track.scrollLeft >= max;
+    };
+    Array.prototype.forEach.call(btns, function (btn) {
+      btn.addEventListener('click', function () {
+        var card = track.querySelector('.review');
+        var step = card ? card.getBoundingClientRect().width + 24 : track.clientWidth;
+        track.scrollBy({ left: step * Number(btn.getAttribute('data-dir')), behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+      });
+    });
+    track.addEventListener('scroll', updateBtns, { passive: true });
+    window.addEventListener('resize', updateBtns);
+    updateBtns();
+  }
+
   /* ---------- Formulaire ---------- */
   var form = document.getElementById('contact-form');
   if (!form) return;
