@@ -14,7 +14,7 @@
   <meta property="og:image" content="https://www.hynera.fr/assets/og-hynera.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
@@ -48,12 +48,10 @@
   </svg>
 
   <!-- Bandeau astreinte -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <p><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><strong>Astreinte frelons et guêpes</strong> les week-ends, de juin à décembre.</p>
-      <p class="topbar-meta"><span>Lun. au ven. 8h30 à 18h30</span><a href="tel:+33299006235">02 99 00 62 35</a></p>
-    </div>
-  </div>
+  <a class="topbar" href="tel:+33299006235">
+    <svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg>
+    <span><strong>Astreinte frelons et guêpes</strong> les week-ends de juin à décembre. Appelez le 02 99 00 62 35.</span>
+  </a>
 
   <!-- En-tête -->
   <header class="header" id="header">
@@ -73,6 +71,7 @@
         </ul>
       </nav>
       <div class="header-cta">
+        <a class="header-phone" href="tel:+33299006235"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>02 99 00 62 35</a>
         <a class="btn btn-primary" href="#contact">Devis gratuit</a>
       </div>
     </div>
@@ -83,8 +82,8 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow eyebrow-light">Experts nuisibles en Bretagne depuis 2003</p>
-          <h1 id="hero-title">Débarrassez-vous des nuisibles, <em>pour de bon.</em></h1>
+          <p class="hero-badge"><span class="hero-badge-dot" aria-hidden="true"></span>Experts nuisibles depuis 2003</p>
+          <h1 id="hero-title">Protection totale <em>contre les nuisibles</em></h1>
           <p class="hero-lead">Frelons, rats, insectes, punaises de lit, bois attaqué ou pigeons : un technicien certifié intervient chez vous sous 24 à 48h, avec une garantie de résultat.</p>
           <div class="hero-actions">
             <a class="btn btn-primary btn-lg" href="#contact">Demander un devis gratuit<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -110,16 +109,7 @@
           <a class="picker-other" href="#contact">Autre besoin (désinfection, toiture…)<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
-    </section>
-
-    <!-- CHIFFRES -->
-    <section class="figures" aria-label="Hynera en chiffres">
-      <div class="container figures-grid">
-        <div class="figure"><strong>10 000+</strong><span>interventions par an</span></div>
-        <div class="figure"><strong>24 à 48h</strong><span>délai d'intervention</span></div>
-        <div class="figure"><strong>3 agences</strong><span>Bruz, Ploërmel, Taden</span></div>
-        <div class="figure"><strong>Depuis 2003</strong><span>plus de 20 ans d'expérience</span></div>
-      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 48c180 26 360 32 540 18S900 14 1080 22s270 30 360 34v24H0z" fill="#fff"/></svg>
     </section>
 
     <!-- SERVICES -->
@@ -127,7 +117,7 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Nos prestations</p>
-          <h2 id="services-title">Une solution pour chaque nuisible</h2>
+          <h2 id="services-title">Nos solutions contre les nuisibles</h2>
           <p>Diagnostic sur place, traitement adapté et suivi jusqu'à disparition du problème, pour les particuliers, les professionnels et les collectivités.</p>
         </div>
 
@@ -139,42 +129,54 @@
 
         <div class="services-grid">
           <a class="service" href="../desinsectisation.html">
-            <span class="service-icon"><svg class="ic" aria-hidden="true"><use href="#i-bug"/></svg></span>
             <h3>Désinsectisation</h3>
             <p>Frelons, guêpes, cafards, punaises de lit, fourmis, chenilles processionnaires.</p>
-            <span class="service-link">Découvrir<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <span class="service-foot"><span class="service-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Intervention 48h</span><span class="service-link">En savoir plus<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
           </a>
           <a class="service" href="../deratisation.html">
-            <span class="service-icon"><svg class="ic" aria-hidden="true"><use href="#i-rat"/></svg></span>
             <h3>Dératisation</h3>
             <p>Rats, souris, campagnols, ragondins : pièges, traitement et suivi de votre site.</p>
-            <span class="service-link">Découvrir<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <span class="service-foot"><span class="service-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Suivi inclus</span><span class="service-link">En savoir plus<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
           </a>
           <a class="service" href="../traitement-bois.html">
-            <span class="service-icon"><svg class="ic" aria-hidden="true"><use href="#i-wood"/></svg></span>
             <h3>Traitement du bois</h3>
             <p>Termites, capricornes, lyctus : on protège durablement charpentes et structures.</p>
-            <span class="service-link">Découvrir<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <span class="service-foot"><span class="service-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Garantie incluse</span><span class="service-link">En savoir plus<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
           </a>
           <a class="service" href="../depigeonnage.html">
-            <span class="service-icon"><svg class="ic" aria-hidden="true"><use href="#i-bird"/></svg></span>
             <h3>Dépigeonnage</h3>
             <p>Filets, pics, répulsifs et nettoyage pour protéger façades et toitures sur la durée.</p>
-            <span class="service-link">Découvrir<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <span class="service-foot"><span class="service-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Solution durable</span><span class="service-link">En savoir plus<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
           </a>
           <a class="service" href="../desinfection.html">
-            <span class="service-icon"><svg class="ic" aria-hidden="true"><use href="#i-spray"/></svg></span>
             <h3>Désinfection</h3>
             <p>Thermonébulisation, nébulisation et pulvérisation contre virus, microbes et bactéries.</p>
-            <span class="service-link">Découvrir<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <span class="service-foot"><span class="service-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Certifié</span><span class="service-link">En savoir plus<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
           </a>
           <a class="service" href="../facade-toiture.html">
-            <span class="service-icon"><svg class="ic" aria-hidden="true"><use href="#i-roof"/></svg></span>
             <h3>Façade et toiture</h3>
             <p>Démoussage, traitement hydrofuge et nettoyage complet, sur devis personnalisé.</p>
-            <span class="service-link">Découvrir<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <span class="service-foot"><span class="service-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Devis gratuit</span><span class="service-link">En savoir plus<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
           </a>
         </div>
+      </div>
+    </section>
+
+    <!-- CHIFFRES -->
+    <section class="figures" aria-labelledby="figures-title">
+      <div class="container">
+        <h2 class="sr-only" id="figures-title">Hynera en chiffres</h2>
+        <div class="figures-grid">
+          <div class="figure"><strong>10 000+</strong><span>interventions par an</span></div>
+          <div class="figure"><strong>3</strong><span>agences en Bretagne</span></div>
+          <div class="figure"><strong>20+</strong><span>années d'expérience</span></div>
+          <div class="figure"><strong>24-48h</strong><span>délai d'intervention</span></div>
+        </div>
+        <ul class="trust-row">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><span><strong>Certifié et agréé</strong>CEPA (CEN 16636), CTB-A+ et Certibiocide</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><span><strong>Garantie résultat</strong>Sur toutes nos interventions</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg><span><strong>Éco-responsable</strong>Produits respectueux de l'environnement</span></li>
+        </ul>
       </div>
     </section>
 
@@ -222,25 +224,28 @@
         </div>
         <div class="agencies">
           <article class="agency">
-            <p class="agency-dep">Ille-et-Vilaine (35) · Siège</p>
-            <h3>Bruz</h3>
+            <div class="agency-head"><p class="agency-dep">Ille-et-Vilaine (35)<span class="agency-tag">Siège social</span></p><h3>Bruz</h3></div>
+            <div class="agency-body">
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>3 impasse Pierre-Gilles de Gennes, 35170 Bruz</p>
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Lun. au ven. 8h30 à 18h30</p>
             <a class="agency-map" href="https://www.google.com/maps/search/?api=1&amp;query=3+impasse+Pierre-Gilles+de+Gennes+35170+Bruz" target="_blank" rel="noopener">Itinéraire<span class="sr-only"> vers l'agence de Bruz (nouvel onglet)</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
           </article>
           <article class="agency">
-            <p class="agency-dep">Morbihan (56)</p>
-            <h3>Ploërmel</h3>
+            <div class="agency-head"><p class="agency-dep">Morbihan (56)</p><h3>Ploërmel</h3></div>
+            <div class="agency-body">
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Le Val Torin, 56800 Ploërmel</p>
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Lun. au ven. 8h30 à 18h30</p>
             <a class="agency-map" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Val+Torin+56800+Ploermel" target="_blank" rel="noopener">Itinéraire<span class="sr-only"> vers l'agence de Ploërmel (nouvel onglet)</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
           </article>
           <article class="agency">
-            <p class="agency-dep">Côtes-d'Armor (22)</p>
-            <h3>Taden</h3>
+            <div class="agency-head"><p class="agency-dep">Côtes-d'Armor (22)</p><h3>Taden</h3></div>
+            <div class="agency-body">
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>301 rue de la Tramontane, ZA des Alleux, 22100 Taden</p>
             <p class="agency-line"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Lun. au ven. 8h30 à 18h30</p>
             <a class="agency-map" href="https://www.google.com/maps/search/?api=1&amp;query=301+rue+de+la+Tramontane+22100+Taden" target="_blank" rel="noopener">Itinéraire<span class="sr-only"> vers l'agence de Taden (nouvel onglet)</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
           </article>
         </div>
         <p class="zones">Pages locales :
