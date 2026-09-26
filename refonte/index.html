@@ -281,51 +281,499 @@
 
         <div class="reviews" aria-labelledby="reviews-title">
           <div class="reviews-head">
-            <h3 id="reviews-title">Derniers avis Google</h3>
+            <div>
+              <h3 id="reviews-title">Avis Google de nos clients</h3>
+              <p class="reviews-sub"><span class="reviews-count">68</span> avis 4 et 5 étoiles avec commentaire, du plus récent au plus ancien</p>
+            </div>
             <div class="reviews-nav">
+              <p class="reviews-pos" id="reviews-pos" aria-live="polite"></p>
               <button type="button" class="reviews-btn" data-dir="-1" aria-label="Avis précédents" aria-controls="reviews-track"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
               <button type="button" class="reviews-btn" data-dir="1" aria-label="Avis suivants" aria-controls="reviews-track"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
             </div>
           </div>
           <ul class="reviews-track" id="reviews-track" tabindex="0" aria-label="Avis clients, faites défiler horizontalement">
-            <li class="review">
-              <figure>
-                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
-                <blockquote><p>J'ai fait appel à Mr Minier parce que j'étais inquiète par rapport à ma charpente de maison qui me paraissait malade, bouffée par des nuisibles…</p></blockquote>
-                <a class="review-more" href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener">Lire la suite sur Google<span class="sr-only"> (avis de Carine C., nouvel onglet)</span></a>
-                <figcaption><span class="review-avatar" aria-hidden="true">C</span><span><strong>Carine C.</strong>Avis Google</span></figcaption>
-              </figure>
-            </li>
+            <!-- AVIS:START -->
             <li class="review">
               <figure>
                 <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
                 <blockquote><p>Je recommande cette entreprise pour son professionnalisme et sa rapide intervention sur un nid de frelons, niché dans le coffre du volet roulant. Travail très sérieux! Merci beaucoup !</p></blockquote>
-                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Anne Marie L.</strong>Avis Google</span></figcaption>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Anne Marie L.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="3"></span></span></span></figcaption>
               </figure>
             </li>
             <li class="review">
               <figure>
                 <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
-                <blockquote><p>Pour des travaux de sablage de poutres à Bruz, excellent contact : rapidité exceptionnelle, travail de qualité et respectueux de nos demandes, personnel avenant…</p></blockquote>
-                <a class="review-more" href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener">Lire la suite sur Google<span class="sr-only"> (avis de Gogal M., nouvel onglet)</span></a>
-                <figcaption><span class="review-avatar" aria-hidden="true">G</span><span><strong>Gogal M.</strong>Avis Google</span></figcaption>
+                <blockquote><p>Pour des travaux de sablage de poutres à Bruz, excellent contact : rapidité exceptionnelle, travail de qualité et respectueux de nos demandes, personnel avenant et sympathique, service de facturation clair et rapide. Je recommande et n'hésiterai pas à refaire appel à vous ! Merci</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">G</span><span><strong>Gogal M.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="3"></span></span></span></figcaption>
               </figure>
             </li>
             <li class="review">
               <figure>
                 <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
-                <blockquote><p>Prise de contact simple et intervention rapide pour un nid de frelons européens sur charpente malgré les intempéries. …</p></blockquote>
-                <a class="review-more" href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener">Lire la suite sur Google<span class="sr-only"> (avis de Jimmy G., nouvel onglet)</span></a>
-                <figcaption><span class="review-avatar" aria-hidden="true">J</span><span><strong>Jimmy G.</strong>Avis Google</span></figcaption>
+                <blockquote><p>J'ai fait appel à Mr Minier parce que j'étais inquiète par rapport à ma charpente de maison qui me paraissait malade, bouffée par des nuisibles... Mr Minier a réussi à trouver un moment pour venir voir un vendredi soir, il a pris le temps de m'expliquer les choses, il m'a bien rassurée en me disant qu'il ne fallait pas se fier à l'apparence, que ma charpente est en chêne et qu'elle est solide, et qu'il n'y a pas de risque. C'est un professionnel sérieux, qui ne cherche pas à faire des travaux alors qu'il n'y en a pas besoin. Je le recommande. Un grand merci à lui</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">C</span><span><strong>Carine C.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="3"></span></span></span></figcaption>
               </figure>
             </li>
             <li class="review">
               <figure>
                 <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
-                <blockquote><p>Nous avons fait appel à leur service aujourd'hui pour un nid de frelons dans notre cheminée Contact ce jour et intervention quelques heures plus tard. Rapide, efficace et tarif très correcte en comparaison de la concurrence. Je recommande vivement.</p></blockquote>
-                <figcaption><span class="review-avatar" aria-hidden="true">O</span><span><strong>Olivier J.</strong>Avis Google</span></figcaption>
+                <blockquote><p>Je recommande Hynera environnement pour son professionnalisme et sa rapidité d'intervention.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">G</span><span><strong>Gwendal B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="9"></span></span></span></figcaption>
               </figure>
             </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>M. Minier nous a aidé avec une infestation. Très agréable, à l'écoute et disponible pour les clients en besoin. Je recommande!</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>Matt I.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="10"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Rdv rapide pour un avis sur l'état d'une charpente. Mr Minier a été très professionnel, sérieux, échange très intéressant et en plus sympathique. Nous recommandons</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">D</span><span><strong>Dominique G.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="10"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Je recommande cette entreprise pour son professionnalisme et sa rapidité pour son intervention sur un nid de frelon asiatique perché dans un arbre. Très bon travail et un grand merci !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">K</span><span><strong>Karoline</strong><span class="review-meta">Avis Google<span class="review-age" data-months="11"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Nous avons fait appel à leur service aujourd'hui pour un nid de frelons dans notre cheminée. Contact ce jour et intervention quelques heures plus tard. Rapide, efficace et tarif très correct en comparaison de la concurrence. Je recommande vivement.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">O</span><span><strong>Olivier J.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Appelé pour deux nids de frelons asiatiques, l'entreprise a été très réactive et a proposé un déplacement le jour même. Intervention très rapide et efficace et très pédagogique. Le professionnel m'a expliqué le processus de création du nid et donc les choses à éviter dans un jardin comme le nôtre. Je recommande.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">V</span><span><strong>Véronique D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>J'ai fait appel à M. Minier pour un audit. Rendez-vous rapide, communication fluide et travail très sérieux. Le rapport reçu est clair et précis : aucun problème détecté mais si un jour un problème survient je ferai de nouveau appel à lui. Un professionnel fiable que je recommande vivement.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">N</span><span><strong>Nicolas B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Prise de contact simple et intervention rapide pour un nid de frelons européens sur charpente malgré les intempéries. Rien à redire, tarif plus que raisonnable, technicien ponctuel et gentil. Merci beaucoup 🙂 …</p></blockquote>
+                <a class="review-more" href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener">Voir l'avis complet sur Google<span class="sr-only"> (nouvel onglet)</span></a>
+                <figcaption><span class="review-avatar" aria-hidden="true">J</span><span><strong>Jimmy G.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Appel à Hynera pour un nid de frelons communs et de guêpes. Accueil téléphonique impeccable et recontact par le technicien intervenant très rapide. Cédric est au top, très professionnel et de très bon conseil. N'hésitez pas à faire appel à leur service ! Un grand merci à Hynera</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">R</span><span><strong>Romain B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>L'entreprise HYNERA ENVIRONNEMENT est venue chez moi pour un nid de guêpes. J'ai été contactée rapidement. Régis est venu pour traiter la zone et nous avons même découvert un deuxième nid. Il m'a expliqué la méthode employée et le produit naturel utilisé. C'était très intéressant, il était très aimable, a répondu à mes questions et m'a donné des conseils. Je recommande.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">L</span><span><strong>Lulu</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>J'ai appelé Hynera pour un souci de petites vrillettes. Jackie s'est déplacé très rapidement et a été très professionnel, il a pris le temps de bien tout m'expliquer. Je n'ai finalement pas eu besoin de ses services mais je n'hésiterai pas à le rappeler si besoin. Merci pour votre réactivité et votre honnêteté.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">C</span><span><strong>Cynthia D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Deux fois que Hynera intervient chez moi pour des nids de frelons. Toujours extrêmement réactif, sympathique et de très bon conseil. Je conseille cette entreprise les yeux fermés. Merci encore !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>Manon B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Un grand merci à Pedro de Hynera Environnement, venu très rapidement traiter un nid de frelons, nous avons apprécié son grand intérêt pour son métier et ses explications passionnantes sur ces insectes. Une entreprise à recommander!</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>Maryvonne R.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Intervention en moins de 2h pour un nid de guêpes en terre. Très efficace, prend le temps de répondre aux questions. Vraiment top merci.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">C</span><span><strong>Cécile K.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Intervention très rapide, très efficace, je recommande ! Merci à Pedro qui est intervenu chez moi, très gentil, à l'écoute, des explications, très professionnel 🙂 …</p></blockquote>
+                <a class="review-more" href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener">Voir l'avis complet sur Google<span class="sr-only"> (nouvel onglet)</span></a>
+                <figcaption><span class="review-avatar" aria-hidden="true">N</span><span><strong>Nicolas B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>J'ai fait intervenir la société Hynera-Environnement, mon avis en 3 mots : rapidité, efficacité et amabilité. Merci à Mathieu. Je recommande à 100%</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">E</span><span><strong>Emmanuelle C.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Entreprise très sérieuse, 3 jours très intenses et les garçons qui s'en sont occupés ont fait un travail remarquable, encore un grand merci ! 😃 …</p></blockquote>
+                <a class="review-more" href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener">Voir l'avis complet sur Google<span class="sr-only"> (nouvel onglet)</span></a>
+                <figcaption><span class="review-avatar" aria-hidden="true">S</span><span><strong>Solenne L.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Pedro est passé pour un nid primaire de frelon asiatique rapidement et a réglé le problème efficacement. Très agréable, souriant et très compétent</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">G</span><span><strong>Georges L.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Des puces partout, merci à lui, rapide, efficace et compréhensif... Le pharmacien a pris ses coordonnées, je le recommande !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">V</span><span><strong>Valérie R.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Entreprise très professionnelle et rapide. Je recommande</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">C</span><span><strong>Christophe B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Intervention réactive. Très professionnel!!</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">G</span><span><strong>Guillaume M.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="12"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Entreprise très réactive. Un nid de frelon à mon domicile.. puis un deuxième chez mon voisin par les frelons restants et c'est bon il n'y a plus rien!! On les a eus!! Merci au technicien pour sa rapidité et son efficacité!! Je recommande</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Alzine D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Je suis très satisfait des services de cette entreprise. J'ai appelé hier matin pour une intervention sur un nid de frelons européens et leurs techniciens sont intervenus le même jour dans l'après-midi. Techniciens très pros et sympathiques. Je recommande!</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Audric S.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Nous avons fait appel à Hynera pour traiter notre charpente, devis plus que correct et équipe au top! Jacky, Clément et Alexis ont été ponctuels, de bons conseils et professionnels! Je suis vraiment ravie du résultat, merci ☺️</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">F</span><span><strong>Fanny R.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Intervention rapide et efficace sur mon nid de frelons asiatiques avec les explications techniques aux sonorités argentines du technicien.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">B</span><span><strong>Brigitte H.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Je recommande cette Société et Régis qui est très professionnel et à l'écoute.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">J</span><span><strong>Jean-Paul V.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Très réactif et des gens très agréables et professionnels, parfait.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">P</span><span><strong>Pierre D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Professionnel au top 👏 Merci à Jacky et son équipe ! …</p></blockquote>
+                <a class="review-more" href="https://www.google.com/search?q=hynera+environnement#lrd=0x480f1e4ef513175d:0x7bbbef413f68f387,1" target="_blank" rel="noopener">Voir l'avis complet sur Google<span class="sr-only"> (nouvel onglet)</span></a>
+                <figcaption><span class="review-avatar" aria-hidden="true">F</span><span><strong>Florent D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Qualité de service au top.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">G</span><span><strong>Garage AD Dubois</strong><span class="review-meta">Avis Google<span class="review-age" data-months="24"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Nous avons fait appel à Hynera pour du sablage de pierres en intérieur. Jacky a été très dispo et réactif, et Clément a fait un super travail de sablage! On est très content du résultat ! Je recommande l'équipe les yeux fermés !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>Marianne L.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Nous avons remarqué un nid de frelons asiatiques dans notre jardin, nous avons contacté Hynera et ils sont venus en 5 minutes. Le problème a été traité très rapidement (en 10 minutes même pas), je recommande cette société sans hésiter !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">L</span><span><strong>Laudine O.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Antoine est arrivé à notre domicile 24h après la prise de rendez-vous... Très courtois et sympathique il a été d'une grande efficacité car il a su identifier et déloger 15 nids de chenilles processionnaires..... Je recommande vivement ses services 👍👍👍👍👍</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">J</span><span><strong>Julian R.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>J'ai eu le plaisir d'avoir l'intervention de Jérôme de Hynera Environnement, très bonne prestation, très professionnel, aimable et efficace. Je recommande sans hésiter. Merci encore !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">V</span><span><strong>Vanhouteghem J.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Personne très professionnelle, entièrement satisfait. Réactivité, très bon travail je le conseillerai à nos amis merci</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">L</span><span><strong>Leon C.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Appel le matin pour un nid de frelons asiatiques, intervention dans la matinée avec professionnalisme! Bye-bye les frelons!</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>Maxime T.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Très bon travail. Merci à Dylan pour son professionnalisme.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">J</span><span><strong>Julien L.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Le professionnel parfait, prix correct et transmet prestation de qualité</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Anu O.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Efficace, rapide et prix correct. Je recommande vivement.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">S</span><span><strong>Sophie G.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 4 sur 5</span></p>
+                <blockquote><p>Équipe très sympathique mais accessibilité en semi réservé aux experts du volant.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">P</span><span><strong>Pascal M.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="36"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>EXCELLENT TRAVAIL. J'ai appelé à 11h30 pour un nid de guêpes, le technicien (Dylan) est passé en fin d'après-midi. Action réaction. Technicien très sympathique, poli et efficace. Merci à vous.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">P</span><span><strong>Pierre Alexandre O.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Sollicité pour éliminer un nid de frelons, 1h30 après l'appel le travail était fait avec un intervenant très sympathique qui explique bien la démarche pour éliminer les frelons. Je recommande.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">B</span><span><strong>Bruno T.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Rapidité d'intervention au top (1h entre la demande d'intervention et l'intervention). La personne qui est intervenue (Dylan) est très sympathique. Je recommande cette entreprise</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Angelique G.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Entreprise contactée pour un traitement de charpente qui connaît bien son sujet avec un bon contact avec le commercial et leur travail est impeccable avec une gestion de chantier super propre. Pas déçus</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">V</span><span><strong>Vava voum</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Un service réactif, compétent et agréable. Grâce à leur efficacité, mon problème de nid de guêpes a été pris en charge.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">V</span><span><strong>Valérie B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Rapide, agréable et efficace ! Rien à redire. Au passage un peu de connaissance partagée sur les guêpes et leurs espèces. Top</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">I</span><span><strong>IKA</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Rapide, efficace, sympathique… Je recommande pour toutes prestations 👍</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">K</span><span><strong>K-ra 77</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Très professionnel. Tarifs très corrects et pas de mauvaise surprise. Je recommande !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">N</span><span><strong>Nath Chat Poron</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Intervention sous 24h. Ponctuel, professionnel.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Anne D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Très professionnel et sympathique.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>MARC</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Rapide et efficace</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">E</span><span><strong>Emilie C.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Rapide et efficace</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Anne L.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="48"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Suite à l'achat de notre maison infestée de puces, le technicien est revenu 3 fois pour les éradiquer. Pas de surplus, prix garanti. Produit efficace, technicien tout autant. Un grand merci pour ces épines enlevées des pieds et chevilles.. :)</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">B</span><span><strong>Benjamin D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="60"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Professionnel et très sympathique, je recommande à 100%!</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">C</span><span><strong>Claude D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="60"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Extra</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Angelik H.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="60"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 4 sur 5</span></p>
+                <blockquote><p>Après avoir fait appel à Hynera Environnement au travers de RÉGIS, je ne peux que louer le professionnalisme de cette personne, réactif et passionné. Pas d'attente entre l'appel et le rappel pour prendre connaissance de la demande. Rapidité dans la prise en charge et dans la mise en place des mesures de sécurité. Qualité de l'information et des explications données par rapport aux guêpes qui nous avaient envahi. Même mon petit fils a pris le temps de l'écouter alors il fallait que cela soit passionnant.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>Michel B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="72"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 4 sur 5</span></p>
+                <blockquote><p>Le Patron et les techniciens sont très accueillant et gentils. Endroit un peu compliqué à trouver quand on connaît pas mais ça le fait quand même.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">S</span><span><strong>Sarah C.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="72"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Appelé ce midi pour un nid de frelon logé dans le mur en pierre de ma maison, et déjà débarrassée de celui-ci. Réactivité et professionnalisme au rendez-vous. Bonnes explications. Je recommande fortement ! Merci encore.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">Y</span><span><strong>Yvanne D.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="72"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Très bonne entreprise, je recommande. Très professionnelle et réactive. J'avais une invasion d'Anthrène depuis des mois et je croise les doigts mais depuis leur intervention je n'ai retrouvé que des cadavres. Le suivi après traitement est très sérieux également. Merci Hynera !!!</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Alison L.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="72"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Nid de frelons découvert à 12:00, intervention dans l'après-midi. Réactif et efficace</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">S</span><span><strong>Sylvain R.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="72"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Très bon travail, à l'écoute du client, très satisfait du sablage de Nicolas, très joli boulot, je recommanderai c'est sûr !</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">P</span><span><strong>Paul F.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="72"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 4 sur 5</span></p>
+                <blockquote><p>Bonne réactivité.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">N</span><span><strong>Nicolas P.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="84"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Très bonne entreprise pour les punaises de lits ... ai testé l'année dernière et très bien débarrassé. Je teste cette année pour les cafards. Je pars confiant. A suivre</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">D</span><span><strong>Didier M.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="84"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Bonne entreprise, rapidité, efficacité, avec des techniciens très professionnels. Je recommande vivement.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Annette B.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="84"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Entreprise sérieuse. Devis et intervention pour un traitement de charpente rapide. Je recommande.</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">M</span><span><strong>Morgane R.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="84"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <li class="review">
+              <figure>
+                <p class="review-rating"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="sr-only">Note : 5 sur 5</span></p>
+                <blockquote><p>Intervention pour ramonage. Rapidité et efficacité. Je recommande cette entreprise</p></blockquote>
+                <figcaption><span class="review-avatar" aria-hidden="true">A</span><span><strong>Ame A.</strong><span class="review-meta">Avis Google<span class="review-age" data-months="96"></span></span></span></figcaption>
+              </figure>
+            </li>
+            <!-- AVIS:END -->
           </ul>
         </div>
 

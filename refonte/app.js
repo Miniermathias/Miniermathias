@@ -31,20 +31,62 @@
     });
   }
 
+  /* ---------- Avis : ancienneté recalculée depuis la date du relevé (27/09/2026) ---------- */
+  var RELEVE = new Date(2026, 8, 27);
+  var now = new Date();
+  var elapsed = Math.max(0, (now.getFullYear() - RELEVE.getFullYear()) * 12 + now.getMonth() - RELEVE.getMonth() - (now.getDate() < RELEVE.getDate() ? 1 : 0));
+  Array.prototype.forEach.call(document.querySelectorAll('.review-age'), function (el) {
+    var m = Number(el.getAttribute('data-months')) + elapsed;
+    el.textContent = ' · il y a ' + (m < 12 ? m + ' mois' : m < 24 ? 'un an' : Math.floor(m / 12) + ' ans');
+  });
+
+  /* ---------- Avis : textes longs repliés avec « Lire la suite » ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('.review blockquote p'), function (p, i) {
+    p.classList.add('is-clamped');
+    if (p.scrollHeight <= p.clientHeight + 2) { p.classList.remove('is-clamped'); return; }
+    p.id = p.id || 'avis-texte-' + i;
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'review-toggle';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-controls', p.id);
+    btn.textContent = 'Lire la suite';
+    btn.addEventListener('click', function () {
+      var open = p.classList.toggle('is-clamped') === false;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.textContent = open ? 'Réduire' : 'Lire la suite';
+    });
+    p.parentNode.insertAdjacentElement('afterend', btn);
+  });
+
   /* ---------- Avis : flèches du carrousel ---------- */
   var track = document.getElementById('reviews-track');
   if (track) {
     var btns = document.querySelectorAll('.reviews-btn');
+    var pos = document.getElementById('reviews-pos');
+    var total = track.children.length;
+    /* Largeur d'une carte + espacement, et nombre de cartes entièrement visibles */
+    var metrics = function () {
+      var card = track.querySelector('.review');
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      var unit = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+      return { unit: unit, perPage: Math.max(1, Math.round((track.clientWidth + gap) / unit)) };
+    };
     var updateBtns = function () {
       var max = track.scrollWidth - track.clientWidth - 2;
       btns[0].disabled = track.scrollLeft <= 2;
       btns[1].disabled = track.scrollLeft >= max;
+      if (pos) {
+        var m = metrics();
+        var first = Math.min(total, Math.round(track.scrollLeft / m.unit) + 1);
+        var last = Math.min(total, first + m.perPage - 1);
+        pos.textContent = 'Avis ' + (first === last ? first : first + ' à ' + last) + ' sur ' + total;
+      }
     };
     Array.prototype.forEach.call(btns, function (btn) {
       btn.addEventListener('click', function () {
-        var card = track.querySelector('.review');
-        var step = card ? card.getBoundingClientRect().width + 24 : track.clientWidth;
-        track.scrollBy({ left: step * Number(btn.getAttribute('data-dir')), behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+        var m = metrics();
+        track.scrollBy({ left: m.unit * m.perPage * Number(btn.getAttribute('data-dir')), behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
       });
     });
     track.addEventListener('scroll', updateBtns, { passive: true });
